@@ -58,7 +58,8 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image="https://i.imgur.com/LJAaNAN.jpeg">
+      <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
+      blur={{ min: -15, max: 20 }}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
@@ -87,7 +88,7 @@ export default function Components(props) {
             </a>
           </Link>
 
-          
+
         </GridItem>
       </div>
       <Footer />
