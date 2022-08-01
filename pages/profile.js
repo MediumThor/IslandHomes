@@ -19,6 +19,9 @@ import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
 
+import CustomInput from "components/CustomInput/CustomInput.js";
+
+
 const useStyles = makeStyles(styles);
 
 export default function ProfilePage(props) {
@@ -34,7 +37,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="NextJS Material Kit"
+        brand="PWYC"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -43,7 +46,7 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image="/img/profile-bg.jpg" />
+      <Parallax small filter image="/img/bg2.jpg" />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -58,8 +61,8 @@ export default function ProfilePage(props) {
                     />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h1 className={classes.title}>Sail Racing Info</h1>
+                    <h6>or list for a crew call</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -75,10 +78,7 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+                Find a vessel to crew on, or list your vessel if youre looking for crew.{" "}
               </p>
             </div>
             <GridContainer justify="center">
@@ -88,7 +88,7 @@ export default function ProfilePage(props) {
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Studio",
+                      tabButton: "Find Boat",
                       tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">
@@ -120,79 +120,94 @@ export default function ProfilePage(props) {
                       ),
                     },
                     {
-                      tabButton: "Work",
+                      tabButton: "Find Crew",
                       tabIcon: Palette,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/olu-eletu.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/clem-onojeghuo.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/cynthia-del-rio.jpg"
-                              className={navImageClasses}
-                            />
+                <CustomInput
+                labelText="Name of Boat"
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
+               <CustomInput
+                labelText="Class"
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
+               <CustomInput
+                labelText="Class"
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
+               <CustomInput
+                labelText="Skipper"
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/mariya-georgieva.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/clem-onojegaw.jpg"
-                              className={navImageClasses}
-                            />
+                          <Button color="primary" round>
+                Submit Listing
+              </Button>
+                          
                           </GridItem>
                         </GridContainer>
                       ),
                     },
                     {
-                      tabButton: "Favorite",
-                      tabIcon: Favorite,
+                      tabButton: "Find Crew",
+                      tabIcon: Palette,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/mariya-georgieva.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-3.jpg"
-                              className={navImageClasses}
-                            />
+                <CustomInput
+                labelText="Name of Boat"
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
+               <CustomInput
+                labelText="Class"
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
+               <CustomInput
+                labelText="Class"
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
+               <CustomInput
+                labelText="Skipper"
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/clem-onojeghuo.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/olu-eletu.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-1.jpg"
-                              className={navImageClasses}
-                            />
+                          <Button color="primary" round>
+                Submit Listing
+              </Button>
+                          
                           </GridItem>
                         </GridContainer>
                       ),
                     },
+                    
                   ]}
                 />
               </GridItem>

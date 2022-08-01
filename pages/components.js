@@ -29,6 +29,7 @@ import SectionExamples from "pages-sections/Components-Sections/SectionExamples.
 import SectionDownload from "pages-sections/Components-Sections/SectionDownload.js";
 
 import styles from "styles/jss/nextjs-material-kit/pages/components.js";
+import bg from "public/img/bg2.jpg";
 
 const useStyles = makeStyles(styles);
 //deleted sections:   <SectionBasics />
@@ -47,6 +48,7 @@ export default function Components(props) {
   const { ...rest } = props;
   return (
     <div>
+      
       <Header
       image = "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/294279993_492068979391607_5939258456021438813_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=grE8R_Tx-6cAX92mgbE&_nc_ht=scontent-ord5-1.xx&oh=00_AT-9TxhYvqBZeLA8-u8D_vLZ5LR40Fvt4mR3Yrjko_mLZA&oe=62ED11B7"
         brand="PWYC"
@@ -54,46 +56,77 @@ export default function Components(props) {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 400,
+          height: 100,
           color: "white",
         }}
         {...rest}
       />
-      <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
-      blur={{ min: -15, max: 20 }}>
+      <Parallax image="https://i.imgur.com/BhDre1N.jpeg"
+      blur={{ min: -100, max: 20 }}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem>
+            <GridItem >
               <div className={classes.brand}>
                 <h1 className={classes.title}>PWYC</h1>
                 <h3 className={classes.subtitle}>
-                 Port Washington Yacht Club
+                 Port Washington, Wisconsin
                 </h3>
               </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
+      
+      
 
       <div className={classNames(classes.main, classes.mainRaised)}>
       <SectionBasicInfo />
-        <SectionCarousel />
-        <GridItem md={12} className={classes.textCenter}>
 
+      <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
+      blur={{ min: -100, max: 20 }}>
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem >
+              <div className={classes.brand}>
+                <h1 className={classes.title}>PWYC</h1>
+                <h3 className={classes.subtitle}>
+                 Port Washington, Wisconsin
+                </h3>
+              </div>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
+      
+      <div className={classNames(classes.main, classes.mainRaised)}>
+      <SectionTabs />
 
-          <Link href="/history">
-            <a className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                History
-              </Button>
-            </a>
-          </Link>
-
-
-        </GridItem>
-        <SectionCompletedExamples />
+      
       </div>
-      <Footer />
+   
+
+      </div>
+      <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
+      blur={{ min: -100, max: 20 }}>
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem >
+              <div className={classes.brand}>
+                <h1 className={classes.title}>PWYC</h1>
+                <h3 className={classes.subtitle}>
+                 Port Washington, Wisconsin
+                </h3>
+              </div>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
+<div>
+
+</div>
+     
+    
     </div>
+  
   );
 }

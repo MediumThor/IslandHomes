@@ -39,7 +39,11 @@ export default function Footer(props) {
               >
                 Location
               </a>
-             
+              <div>  <p>PO BOX 101</p>
+              <p>430 N. Lake Street</p>
+              <p>Port Washington</p>
+              <p>WI</p>
+              <p>53074</p></div>
             
 
             </ListItem>
@@ -52,17 +56,14 @@ export default function Footer(props) {
               >
                 About us
               </a>
+              <div>  <p>PO BOX 101</p>
+              <p>430 N. Lake Street</p>
+              <p>Port Washington</p>
+              <p>WI</p>
+              <p>53074</p></div>
              
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=njsmk-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
+           
             <ListItem className={classes.inlineBlock}>
               <a
                 href="https://www.creative-tim.com/license?ref=njsmk-footer"
@@ -87,11 +88,7 @@ export default function Footer(props) {
         </div>
         
       </div>
-      <div>  <p>PO BOX 101</p>
-              <p>430 N. Lake Street</p>
-              <p>Port Washington</p>
-              <p>WI</p>
-              <p>53074</p></div>
+     
      
     </footer>
   );

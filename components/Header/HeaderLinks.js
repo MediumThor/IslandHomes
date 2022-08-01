@@ -60,9 +60,10 @@ export default function HeaderLinks(props) {
       </ListItem>
       <Link href="/login">
              <a className={classes.link}>
-               <Button color="white" size="lg" simple>
+               <Button color="success" size="lg" simple >
                  Login
                </Button>
+               
              </a>
            </Link>
       <ListItem className={classes.listItem}>

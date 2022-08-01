@@ -14,23 +14,29 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import Favorite from "@material-ui/icons/Favorite";
 import CardMembershipIcon from '@mui/icons-material/CardMembership';
 
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
 
 import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/pillsStyle.js";
+import SectionCarousel from "./SectionCarousel";
+
+import Link from "next/link";
+import SectionBasics from "./SectionBasics";
 
 const useStyles = makeStyles(styles);
 
 export default function SectionPills() {
   const classes = useStyles();
   return (
+    
     <div className={classes.section}>
       <div className={classes.container}>
         <div id="navigation-pills">
           <div className={classes.title}>
-            <h3>Club Info</h3>
+            <h1>Port Washington Yacht Club</h1>
           </div>
           <div className={classes.title}>
             <h3>
@@ -38,9 +44,10 @@ export default function SectionPills() {
             </h3>
           </div>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={8} lg={6}>
+            
+            <GridItem lg={6}>
               <NavPills
-                color="rose"
+                color="info"
                 tabs={[
                   {
                     tabButton: "Cruising and Fishing",
@@ -51,10 +58,10 @@ export default function SectionPills() {
                           
                         </p>
                         <br />
-                        <p>
+                        <h3>
                       Enjoy cruising trips to other ports with yacht club members.
 
-                        </p>
+                        </h3>
                         <br />
                         <p>
                         Participate in fishing tournaments including the Lloyd Purnell Annual Fishing Tournament 
@@ -68,13 +75,14 @@ export default function SectionPills() {
                     tabIcon: SailingIcon,
                     tabContent: (
                       <span>
-                        <p>
+                        <h3>
                         Saturday Buoy racing series for both racing class and cruising class boats,
                          are held on most weekends, June through September.
-                        Two long distant weekend races, one to and from Sheboygan and the other to and from Milwaukee are fun races for which individual awards are given.
-                        </p>
+                        </h3>
                         <br />
                         <p>
+                        Two long distant weekend races, one to and from Sheboygan and the other to and from Milwaukee are fun races for which individual awards are given.
+
                         The Port Washington Yacht Club sponsors the across the lake Clipper Cup race and hosts the west shore and across the lake 'Double Handed' race. Both races finish at Port Washington Harbor with award parties held at the yacht club.
                         </p>
                       </span>
@@ -85,10 +93,10 @@ export default function SectionPills() {
                     tabIcon: GroupsIcon,
                     tabContent: (
                       <span>
-                        <p>
+                        <h3>
                         Club activities include a year round social calendar that not only consists of a full schedule of fun parties,
                          but also informal group trips anytime during the year.
-                         </p>
+                         </h3>
                         <br />
                         <p>
                         In addition, the Club participates in the city's Fish Day celebration and is involved in other community activities. 
@@ -106,13 +114,13 @@ export default function SectionPills() {
                     tabIcon: Dashboard,
                     tabContent: (
                       <span>
-                        <p>
+                        <h3>
                         Requirements for membership are:
 
                       Interest in boating (boat ownership is not required)
                         A completed application including signatures of two current PWYC members
                       $25 check (non-refundable application fee)
-                        </p>
+                        </h3>
                         <br />
                         <p>
                         Your application will be posted on the Club bulletin board for review by the membership for 30 days. 
@@ -129,7 +137,9 @@ export default function SectionPills() {
                         Members have the rights, privileges and duties as set forth in the Club By-Laws. Participation in Club activities is highly encouraged.                        
                         </p>
                         <Button color="primary" round>
-                <CardMembershipIcon className={classes.icons} /> Click here to view membership application
+                <CardMembershipIcon className={classes.icons} 
+                href= "http://www.pwycwi.com/images/PWYC_Application_-rev._2019.pdf"
+                /> Click here to view membership application
               </Button>
                       </span>
                     
@@ -137,9 +147,19 @@ export default function SectionPills() {
                   }
                 ]}
               />
+              <GridItem md={12} className={classes.textCenter}>
+
+
+</GridItem>
+            </GridItem>
+            
+            <GridItem  lg={6}>
+
+              <SectionCarousel/>
             </GridItem>
            
           </GridContainer>
+          
         </div>
       </div>
     </div>
