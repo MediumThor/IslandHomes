@@ -48,6 +48,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
+      image = "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/294279993_492068979391607_5939258456021438813_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=grE8R_Tx-6cAX92mgbE&_nc_ht=scontent-ord5-1.xx&oh=00_AT-9TxhYvqBZeLA8-u8D_vLZ5LR40Fvt4mR3Yrjko_mLZA&oe=62ED11B7"
         brand="PWYC"
         rightLinks={<HeaderLinks />}
         fixed
