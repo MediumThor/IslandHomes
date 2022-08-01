@@ -91,6 +91,7 @@ export default function Components(props) {
 
 
         </GridItem>
+        <SectionCompletedExamples />
       </div>
       <Footer />
     </div>

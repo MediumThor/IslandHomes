@@ -40,7 +40,7 @@ export default function SectionPills() {
           <GridContainer>
             <GridItem xs={12} sm={12} md={8} lg={6}>
               <NavPills
-                color="primary"
+                color="rose"
                 tabs={[
                   {
                     tabButton: "Cruising and Fishing",
