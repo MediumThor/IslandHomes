@@ -101,39 +101,6 @@ export default function SectionPills() {
                       </span>
                     ),
                   },
-                ]}
-              />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12} lg={6}>
-              <NavPills
-                color="rose"
-                horizontal={{
-                  tabsGrid: { xs: 12, sm: 4, md: 4 },
-                  contentGrid: { xs: 12, sm: 8, md: 8 },
-                }}
-                tabs={[
-                  {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
-                        </p>
-                      </span>
-                    ),
-                  },
                   {
                     tabButton: "Become A Member",
                     tabIcon: Dashboard,
@@ -168,10 +135,10 @@ export default function SectionPills() {
                     
                     ),
                   }
-                 
                 ]}
               />
             </GridItem>
+           
           </GridContainer>
         </div>
       </div>
