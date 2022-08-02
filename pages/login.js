@@ -35,14 +35,14 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="NextJS Material Kit"
+        brand="Back to the Club"
         rightLinks={<HeaderLinks />}
         {...rest}
       />
       <div
         className={classes.pageHeader}
         style={{
-          backgroundImage: "url('/img/bg7.jpg')",
+          backgroundImage: "url('https://i.imgur.com/BhDre1N.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "top center",
         }}

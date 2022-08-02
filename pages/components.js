@@ -14,10 +14,17 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
+
 // sections for this page
 import SectionBasics from "pages-sections/Components-Sections/SectionBasics.js";
 import SectionNavbars from "pages-sections/Components-Sections/SectionNavbars.js";
 import SectionTabs from "pages-sections/Components-Sections/SectionTabs.js";
+import SectionTabs2 from "pages-sections/Components-Sections/SectionTabs2.js";
+import SectionTabs3 from "pages-sections/Components-Sections/SectionTabs3.js";
+import SectionTabs4 from "pages-sections/Components-Sections/SectionTabs3.js";
+import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+
+
 import SectionBasicInfo from "pages-sections/Components-Sections/SectionBasicInfo.js";
 import SectionNotifications from "pages-sections/Components-Sections/SectionNotifications.js";
 import SectionTypography from "pages-sections/Components-Sections/SectionTypography.js";
@@ -30,6 +37,7 @@ import SectionDownload from "pages-sections/Components-Sections/SectionDownload.
 
 import styles from "styles/jss/nextjs-material-kit/pages/components.js";
 import bg from "public/img/bg2.jpg";
+import TeamSection from "../pages-sections/LandingPage-Sections/TeamSection";
 
 const useStyles = makeStyles(styles);
 //deleted sections:   <SectionBasics />
@@ -50,7 +58,7 @@ export default function Components(props) {
     <div>
       
       <Header
-      image = "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/294279993_492068979391607_5939258456021438813_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=grE8R_Tx-6cAX92mgbE&_nc_ht=scontent-ord5-1.xx&oh=00_AT-9TxhYvqBZeLA8-u8D_vLZ5LR40Fvt4mR3Yrjko_mLZA&oe=62ED11B7"
+      image= "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/294279993_492068979391607_5939258456021438813_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=grE8R_Tx-6cAX92mgbE&_nc_ht=scontent-ord5-1.xx&oh=00_AT-9TxhYvqBZeLA8-u8D_vLZ5LR40Fvt4mR3Yrjko_mLZA&oe=62ED11B7"
         brand="PWYC"
         rightLinks={<HeaderLinks />}
         fixed
@@ -77,18 +85,18 @@ export default function Components(props) {
         </div>
       </Parallax>
       
-      
-
       <div className={classNames(classes.main, classes.mainRaised)}>
       <SectionBasicInfo />
+      
+      </div>
 
       <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
-      blur={{ min: -100, max: 20 }}>
+      blur={{ min: -10, max: 200 }}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem >
               <div className={classes.brand}>
-                <h1 className={classes.title}>Summer Bouy Racing</h1>
+                <h1 className={classes.title}>Summer Buoy Racing</h1>
                 <h3 className={classes.subtitle}>
                 Wednesday evenings and Saturday afternoons
                 </h3>
@@ -96,32 +104,48 @@ export default function Components(props) {
             </GridItem>
           </GridContainer>
         </div>
+        
       </Parallax>
       
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div>
       <SectionTabs />
 
-      
       </div>
    
 
-      </div>
-      <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
+      
+      <Parallax image="https://nickyboycharters.com/wp-content/uploads/2015/11/Boat_001.jpg"
       blur={{ min: -100, max: 20 }}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem >
               <div className={classes.brand}>
-                <h1 className={classes.title}>PWYC</h1>
+                <h1 className={classes.title}>Cruising & Fishing</h1>
                 <h3 className={classes.subtitle}>
-                 Port Washington, Wisconsin
+                 The Best Family Friendly Fishin' on The Great Lakes
                 </h3>
               </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
+
+      <SectionTabs2 />
+
+    
+
+      <WorkSection />
+
+   
+
+      <Footer/>
+
+
+     
+
+    
 <div>
+
 
 </div>
      

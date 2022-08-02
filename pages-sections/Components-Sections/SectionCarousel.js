@@ -59,14 +59,14 @@ export default function SectionCarousel() {
                 </div>
                 <div>
                   <img
-                    src="/img/bg3.jpg"
+                    src="https://scontent-ord5-1.xx.fbcdn.net/v/t1.6435-9/67950495_1342762882547266_2279083507533742080_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=KVP-LaKf7WUAX-l4rBd&_nc_ht=scontent-ord5-1.xx&oh=00_AT8GIk7JAocRi9MmZAOnNWprZgGVMvuaNtYac1DT9X6IRg&oe=630EA61C"
                     alt="Third slide"
                     className="slick-image"
                   />
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
+                      North Slip, Port Washington, WI, United States
                     </h4>
                   </div>
                 </div>

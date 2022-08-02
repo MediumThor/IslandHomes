@@ -14,10 +14,10 @@ const useStyles = makeStyles(styles);
 export default function Parallax(props) {
   let windowScrollTop;
   // if (window.innerWidth >= 768) {
-  //   windowScrollTop = window.pageYOffset / 3;
+  //  windowScrollTop = window.pageYOffset / 12;
   // } else {
-  //   windowScrollTop = 0;
-  // }
+   //  windowScrollTop = 12;
+ //  }
   const [transform, setTransform] = React.useState("translate3d(0,0px,0)");
   React.useEffect(() => {
     if (window.innerWidth >= 768) {
@@ -30,7 +30,7 @@ export default function Parallax(props) {
     };
   });
   const resetTransform = () => {
-    var windowScrollTop = window.pageYOffset / 3;
+    var windowScrollTop = window.pageYOffset / 7;
     setTransform("translate3d(0," + windowScrollTop + "px,0)");
   };
   const {

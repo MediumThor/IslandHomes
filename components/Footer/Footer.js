@@ -48,21 +48,7 @@ export default function Footer(props) {
 
             </ListItem>
           
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation?ref=njsmk-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-              <div>  <p>PO BOX 101</p>
-              <p>430 N. Lake Street</p>
-              <p>Port Washington</p>
-              <p>WI</p>
-              <p>53074</p></div>
-             
-            </ListItem>
+           
            
             <ListItem className={classes.inlineBlock}>
               <a

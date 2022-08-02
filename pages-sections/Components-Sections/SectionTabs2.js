@@ -23,24 +23,22 @@ export default function SectionTabs() {
     <div className={classes.section}>
       <div className={classes.container}>
         <div id="nav-tabs">
-          <h1>Sail Racing</h1>
-          <Link href="/raceinfo">
+          <h1>Explore</h1>
+          <Link href="/history">
   <a className={classes.link}>
   <Button color="info" round>
         Info
     </Button>
   </a>
 </Link>
-<Link href="/raceinfo">
+<Link href="/profile">
   <a className={classes.link}>
-  <Button color="warning" round>
-      Racing Crew/ Find A Boat
+  <Button color="danger" round>
+      Avaliable Charters
     </Button>
   </a>
 </Link>
-          <GridContainer>
            
-          </GridContainer>
         </div>
       </div>
     </div>

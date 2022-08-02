@@ -27,7 +27,7 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Here is our team</h2>
+      <h1 className={classes.title}>Spinniker Division</h1>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
@@ -40,7 +40,7 @@ export default function TeamSection() {
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Gigi Hadid
+                Uzivo
                 <br />
                 <small className={classes.smallTitle}>Model</small>
               </h4>
@@ -87,7 +87,7 @@ export default function TeamSection() {
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Christian Louboutin
+                Sweet Freedom
                 <br />
                 <small className={classes.smallTitle}>Designer</small>
               </h4>
@@ -127,7 +127,7 @@ export default function TeamSection() {
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Kendall Jenner
+                River Road
                 <br />
                 <small className={classes.smallTitle}>Model</small>
               </h4>

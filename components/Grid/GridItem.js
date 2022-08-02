@@ -13,6 +13,7 @@ const styles = {
     paddingRight: "15px",
     paddingLeft: "15px",
     flexBasis: "auto",
+    marginBottom: "00px",
   },
 };
 

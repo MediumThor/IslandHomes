@@ -39,9 +39,9 @@ export default function SectionPills() {
             <h1>Port Washington Yacht Club</h1>
           </div>
           <div className={classes.title}>
-            <h4>
-              <small>In the heart of Ozaukee Co, WI on the Shore of Lake Michigan</small>
-            </h4>
+            <h3>
+              <small></small>
+            </h3>
           </div>
           <GridContainer>
             
@@ -111,7 +111,7 @@ export default function SectionPills() {
                   },
                   {
                     tabButton: "Become A Member",
-                    tabIcon: CardMembershipIcon,
+                    tabIcon: Dashboard,
                     tabContent: (
                       <span>
                         <h3>

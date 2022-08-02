@@ -37,14 +37,17 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link href="/components">
+            <Link href="/raceinfo">
               <a className={classes.dropdownLink}>Races</a>
             </Link>,
-             <Link href="/components">
+             <Link href="/charterinfo">
              <a className={classes.dropdownLink}>Charters</a>
            </Link>,
+            <Link href="/history">
+            <a className={classes.dropdownLink}>History</a>
+          </Link>,
             <Link href="/pages-sections/Components-Sections/SectionRaces.js">
-            <a className={classes.dropdownLink}>info</a>
+            <a className={classes.dropdownLink}>Info</a>
           </Link>,
            
           
@@ -68,17 +71,17 @@ export default function HeaderLinks(props) {
            </Link>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
+          href="https://weather.com/weather/tenday/l/Port+Washington+WI?canonicalCityId=a187693f82067a61c2a7362b30e52ada3364c6208f939264e433aa5ed1abaa35"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <Icon className={classes.icons}>unarchive</Icon> LINK
+          <Icon className={classes.icons}>unarchive</Icon> Weather
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
+          href="https://www.facebook.com/PWYCWI"
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -99,7 +102,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://www.facebook.com/PWYCWI"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -134,7 +137,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.facebook.com/PWYCWI"
             target="_blank"
             className={classes.navLink}
           >
