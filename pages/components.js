@@ -88,9 +88,9 @@ export default function Components(props) {
           <GridContainer>
             <GridItem >
               <div className={classes.brand}>
-                <h1 className={classes.title}>PWYC</h1>
+                <h1 className={classes.title}>Summer Bouy Racing</h1>
                 <h3 className={classes.subtitle}>
-                 Port Washington, Wisconsin
+                Wednesday evenings and Saturday afternoons
                 </h3>
               </div>
             </GridItem>
