@@ -12,6 +12,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Favorite from "@material-ui/icons/Favorite";
 
 import styles from "styles/jss/nextjs-material-kit/components/footerStyle.js";
+import GridItem from "../Grid/GridItem";
 
 const useStyles = makeStyles(styles);
 
@@ -27,13 +28,14 @@ export default function Footer(props) {
     [classes.footerWhiteFont]: whiteFont,
   });
   return (
+    <GridItem>
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/?ref=njsmk-footer"
+                href="https://www.google.com/maps/place/Port+Washington+Yacht+Club/@43.3918745,-87.8677297,17z/data=!3m1!4b1!4m5!3m4!1s0x8804ea1cbd453539:0x7d30452aaee626c4!8m2!3d43.3919444!4d-87.8655227"
                 className={classes.block}
                 target="_blank"
               >
@@ -77,6 +79,7 @@ export default function Footer(props) {
      
      
     </footer>
+    </GridItem>
   );
 }
 
