@@ -85,9 +85,26 @@ export default function SectionPills() {
 
                         The Port Washington Yacht Club sponsors the across the lake Clipper Cup race and hosts the west shore and across the lake 'Double Handed' race. Both races finish at Port Washington Harbor with award parties held at the yacht club.
                         </p>
+                 
+
+            
+               <Button
+              href="/raceinfo"          
+            color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+           Race Info
+        </Button>
                       </span>
+                      
+                      
+                      
                     ),
+                    
+                    
                   },
+                  
                   {
                     tabButton: "Social Functions",
                     tabIcon: GroupsIcon,
@@ -106,6 +123,17 @@ export default function SectionPills() {
                         <p>
                         The clubhouse bar is open each Friday evening during the summer months for use by its members and visiting boaters from other yacht clubs.
                         </p>
+                    
+           
+
+                               <Button
+          href="https://www.pwycwi.com/index.php?option=com_jevents&task=month.calendar&year=2022&month=08&day=15&Itemid=20"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+           Event Calendar
+        </Button>
                       </span>
                     ),
                   },
@@ -136,11 +164,24 @@ export default function SectionPills() {
                         <p>
                         Members have the rights, privileges and duties as set forth in the Club By-Laws. Participation in Club activities is highly encouraged.                        
                         </p>
-                        <Button color="primary" round>
-                <CardMembershipIcon className={classes.icons} 
-                href= "http://www.pwycwi.com/images/PWYC_Application_-rev._2019.pdf"
-                /> Click here to view membership application
-              </Button>
+                        <Button
+          href="/member"
+          color="secondary"
+          target="_blank"
+          className={classes.navLink}
+        >
+           Become A Member
+        </Button>
+
+        <Button
+                    href="https://www.pwycwi.com/images/PWYC_Application_-rev._2019.pdf"
+                    color="secondary"
+          target="_blank"
+          className={classes.navLink}
+        >
+                      Membership Form
+        </Button>
+           
                       </span>
                     
                     ),
@@ -149,11 +190,11 @@ export default function SectionPills() {
               />
            
             </GridItem>
-            
             <GridItem  lg={6}>
 
-              <SectionCarousel/>
-            </GridItem>
+<SectionCarousel/>
+</GridItem>
+         
            
           </GridContainer>
           
@@ -162,3 +203,7 @@ export default function SectionPills() {
     </div>
   );
 }
+//<GridItem  lg={6}>
+
+//<SectionCarousel/>
+//</GridItem>

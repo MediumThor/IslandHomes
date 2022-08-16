@@ -27,7 +27,7 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h1 className={classes.title}>Spinnaker Division</h1>
+      <h1 className={classes.title}></h1>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>

@@ -114,31 +114,26 @@ export default function Components(props) {
    
 
       
-      <Parallax image="https://nickyboycharters.com/wp-content/uploads/2015/11/Boat_001.jpg"
-      blur={{ min: -100, max: 20 }}>
-        <div className={classes.container}>
-          <GridContainer>
+
+
+  
+  
+   
+
+
+      <GridContainer>
             <GridItem >
               <div className={classes.brand}>
-                <h1 className={classes.title}>Cruising & Fishing</h1>
-                <h3 className={classes.subtitle}>
-                 The Best Family Friendly Fishin' on The Great Lakes
-                </h3>
+               <WorkSection/>
               </div>
             </GridItem>
           </GridContainer>
-        </div>
-      </Parallax>
-
-      <SectionTabs2 />
-
-    
-
-      <WorkSection />
 
    
-
-      <Footer/>
+      <div className={classNames(classes.main, classes.mainRaised)}>
+      <Footer/>      
+      </div>
+      
 
 
      

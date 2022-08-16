@@ -27,22 +27,22 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h1 className={classes.title}>Spinnaker Division</h1>
+      <h1 className={classes.title}>Jib and Main</h1>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
-                  src="https://i.imgur.com/t7RcT.jpeg"
+                  src="https://i.imgur.com/cf0iwmb.png"
                   alt="..."
                   className={imageClasses}
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Uzivo
+                Karisma
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Hunter</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
@@ -64,6 +64,7 @@ export default function TeamSection() {
                   justIcon
                   color="transparent"
                   className={classes.margin5}
+                  
                 >
                   <i className={classes.socials + " fab fa-instagram"} />
                 </Button>
@@ -81,15 +82,15 @@ export default function TeamSection() {
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
-                  src="https://i.imgur.com/34xKXlL.png"
+                  src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/290880531_2220733691416843_1192104308329785208_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=P5hFJl7htrkAX8OwHi5&_nc_ht=scontent-ord5-1.xx&oh=00_AT9A5h1fzgFfk_f3cxi8ZyZ-Yv2BKVf6rSFaSxDhgJ1fDw&oe=62EC8284"
                   alt="..."
                   className={imageClasses}
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Sweet Freedom
+                Breathtaking
                 <br />
-                <small className={classes.smallTitle}>Designer</small>
+                <small className={classes.smallTitle}>Pearson 323</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
@@ -121,15 +122,15 @@ export default function TeamSection() {
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
-                  src="https://i.imgur.com/t7RcT.jpeg"
+                  src="https://i.imgur.com/OxNLvly.png"
                   alt="..."
                   className={imageClasses}
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                River Road
+                Scherzando
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}> O'Day 28</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
@@ -151,6 +152,7 @@ export default function TeamSection() {
                   justIcon
                   color="transparent"
                   className={classes.margin5}
+                  href="https://www.instagram.com/scherzandoracing/"
                 >
                   <i className={classes.socials + " fab fa-instagram"} />
                 </Button>

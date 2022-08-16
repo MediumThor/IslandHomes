@@ -23,7 +23,7 @@ export default function SectionTabs() {
     <div className={classes.section}>
       <div className={classes.container}>
         <div id="nav-tabs">
-          <h1>Explore</h1>
+          <h1> </h1>
           <Link href="/history">
   <a className={classes.link}>
   <Button color="info" round>

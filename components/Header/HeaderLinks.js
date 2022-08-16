@@ -11,6 +11,7 @@ import Icon from "@material-ui/core/Icon";
 
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
+import AirIcon from '@mui/icons-material/Air';
 import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 
@@ -44,7 +45,7 @@ export default function HeaderLinks(props) {
              <a className={classes.dropdownLink}>Charters</a>
            </Link>,
             <Link href="/history">
-            <a className={classes.dropdownLink}>History</a>
+            <a className={classes.dropdownLink}>Club History</a>
           </Link>,
             <Link href="/pages-sections/Components-Sections/SectionRaces.js">
             <a className={classes.dropdownLink}>Info</a>
@@ -58,6 +59,59 @@ export default function HeaderLinks(props) {
             >
               Old Site
             </a>,
+            
+                     <a
+                     href="https://www.pwycwi.com/index.php?option=com_jevents&task=month.calendar&year=2022&month=08&day=15&Itemid=20"
+                     target="_blank"
+                     className={classes.dropdownLink}
+                   >
+                    Events Calendar        
+                 </a>,
+          ]}
+        />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          noLiPadding
+          navDropdown
+          buttonText="Weather"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent",
+          }}
+          buttonIcon={AirIcon}
+          dropdownList={[
+        
+             <a
+             href="https://forecast.weather.gov/MapClick.php?lat=43.3876&lon=-87.8711"
+             target="_blank"
+             className={classes.dropdownLink}
+           >
+             Forecast
+           </a>, 
+         <a
+         href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJsb2NhbCIsImNlbnRlciI6Wy04OC41NSw0Mi45NjhdLCJsb2NhdGlvbiI6bnVsbCwiem9vbSI6NywiZmlsdGVyIjoiV1NSLTg4RCIsImxheWVyIjoiYnJlZl9yYXciLCJzdGF0aW9uIjoiS01LWCJ9LCJhbmltYXRpbmciOmZhbHNlLCJiYXNlIjoic3RhbmRhcmQiLCJhcnRjYyI6ZmFsc2UsImNvdW50eSI6ZmFsc2UsImN3YSI6ZmFsc2UsInJmYyI6ZmFsc2UsInN0YXRlIjpmYWxzZSwibWVudSI6dHJ1ZSwic2hvcnRGdXNlZE9ubHkiOnRydWUsIm9wYWNpdHkiOnsiYWxlcnRzIjowLjgsImxvY2FsIjowLjYsImxvY2FsU3RhdGlvbnMiOjAuOCwibmF0aW9uYWwiOjAuNn19#/
+         "
+         target="_blank"
+         className={classes.dropdownLink}
+       >
+         Radar
+       </a>, 
+        <a
+        href="/https://www.sailflow.com/map#"
+        target="_blank"
+        className={classes.dropdownLink}
+      >
+        SailFlow
+      </a>,
+            <a
+              href="http://www.pwycwi.com/index.php?option=com_content&view=article&id=1&Itemid=1"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+          Placeholder
+            </a>,
+    
           ]}
         />
       </ListItem>
@@ -71,22 +125,32 @@ export default function HeaderLinks(props) {
            </Link>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://weather.com/weather/tenday/l/Port+Washington+WI?canonicalCityId=a187693f82067a61c2a7362b30e52ada3364c6208f939264e433aa5ed1abaa35"
+          href="/member"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <Icon className={classes.icons}>unarchive</Icon> Weather
+          <Icon className={classes.icons}>unarchive</Icon> Become A Member
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.facebook.com/PWYCWI"
+          href="https://www.portwashingtonwi.gov/departments/marina"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> LINK
+          <Icon className={classes.icons}>unarchive</Icon> Marina
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="https://www.google.com/maps/place/Port+Washington+Yacht+Club/@43.3918745,-87.8677297,17z/data=!3m1!4b1!4m5!3m4!1s0x8804ea1cbd453539:0x7d30452aaee626c4!8m2!3d43.3919444!4d-87.8655227"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+          <CloudDownload className={classes.icons} /> Visit
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>

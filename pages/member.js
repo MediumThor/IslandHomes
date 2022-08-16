@@ -17,12 +17,14 @@ import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 
+
 // Sections for this page
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
-import TeamSection2 from "pages-sections/LandingPage-Sections/TeamSection2.js";
-import TeamSectionCruising from "pages-sections/LandingPage-Sections/TeamSectionCruising.js"
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+import SectionMembership from "../pages-sections/Components-Sections/SectionMembership";
+import { Card } from "@material-ui/core";
+
 
 const dashboardRoutes = [];
 
@@ -45,11 +47,11 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image="https://i.imgur.com/G0HDv0n.png">
+      <Parallax filter responsive image="https://i.imgur.com/BhDre1N.jpeg">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Sail Racing</h1>
+              <h1 className={classes.title}>Become a Member</h1>
               <h4>
                 Every landing page needs a small description after the big bold
                 title, that{"'"}s why we added this text here. Add here all the
@@ -57,29 +59,18 @@ export default function LandingPage(props) {
                 impression.
               </h4>
               <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button>
+            
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <TeamSection />
-          <TeamSection2 />
-          <TeamSectionCruising />
-          <WorkSection />
+          <SectionMembership />
         </div>
-      </div>
-      <Footer />
+     
+      </div >
+    
     </div>
   );
 }
