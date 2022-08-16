@@ -38,6 +38,9 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
+            <Link href="/events">
+             <a className={classes.dropdownLink}>Events</a>
+           </Link>,
             <Link href="/raceinfo">
               <a className={classes.dropdownLink}>Races</a>
             </Link>,
@@ -47,8 +50,8 @@ export default function HeaderLinks(props) {
             <Link href="/history">
             <a className={classes.dropdownLink}>Club History</a>
           </Link>,
-            <Link href="/pages-sections/Components-Sections/SectionRaces.js">
-            <a className={classes.dropdownLink}>Info</a>
+            <Link href="/links">
+            <a className={classes.dropdownLink}>Links</a>
           </Link>,
            
           

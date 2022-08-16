@@ -165,23 +165,21 @@ export default function SectionPills() {
                         Members have the rights, privileges and duties as set forth in the Club By-Laws. Participation in Club activities is highly encouraged.                        
                         </p>
                         <Button
+                        
           href="/member"
-          color="secondary"
+          color="transparent"
           target="_blank"
           className={classes.navLink}
         >
            Become A Member
         </Button>
 
-        <Button
+        
+              <Button color="primary" round
                     href="https://www.pwycwi.com/images/PWYC_Application_-rev._2019.pdf"
-                    color="secondary"
-          target="_blank"
-          className={classes.navLink}
-        >
+                    >
                       Membership Form
-        </Button>
-           
+                    </Button>
                       </span>
                     
                     ),
