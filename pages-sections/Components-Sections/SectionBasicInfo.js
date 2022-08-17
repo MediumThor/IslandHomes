@@ -23,8 +23,10 @@ import NavPills from "components/NavPills/NavPills.js";
 import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/pillsStyle.js";
 import SectionCarousel from "./SectionCarousel";
 
+
 import Link from "next/link";
 import SectionBasics from "./SectionBasics";
+import FancyButton from "components/FancyButton.tsx"
 
 const useStyles = makeStyles(styles);
 

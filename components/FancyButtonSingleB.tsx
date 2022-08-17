@@ -3,25 +3,16 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import { Button } from '@mui/material';
 
 const images = [
   {
-    url: 'https://i.imgur.com/LJAaNAN.jpeg',
-    title: 'Sail Racing',
-    width: '33%',
-    
-  },
-  {
-    url: 'https://i.imgur.com/aUvlF87.jpg',
-    title: 'Events',
-    width: '33%',
-  },
-  {
     url: 'https://nickyboycharters.com/wp-content/uploads/2015/11/Boat_001.jpg',
     title: 'Trips and Charters',
-    width: '34%',
+    width: '100%',
     
   },
+
 ];
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
@@ -91,11 +82,15 @@ const ImageMarked = styled('span')(({ theme }) => ({
 
 export default function ButtonBases() {
   return (
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
+    <Button     href="/raceinfo"
+    >
+    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 350, width: '100%' }}>
       {images.map((image) => (
         <ImageButton
           focusRipple
+          
           key={image.title}
+
           style={{
             width: image.width,
           }}
@@ -103,6 +98,7 @@ export default function ButtonBases() {
           <ImageSrc style={{ backgroundImage: `url(${image.url})` }}/>
           <ImageBackdrop className="MuiImageBackdrop-root" />
           <Image>
+
             <Typography
               component="span"
               
@@ -121,6 +117,8 @@ export default function ButtonBases() {
           </Image>
         </ImageButton>
       ))}
+      
     </Box>
+    </Button>
   );
 }

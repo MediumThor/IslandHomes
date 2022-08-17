@@ -30,7 +30,7 @@ export default function Parallax(props) {
     };
   });
   const resetTransform = () => {
-    var windowScrollTop = window.pageYOffset / 7;
+    var windowScrollTop = window.pageYOffset / 5;
     setTransform("translate3d(0," + windowScrollTop + "px,0)");
   };
   const {
@@ -55,6 +55,7 @@ export default function Parallax(props) {
       className={parallaxClasses}
       style={{
         ...style,
+        
         backgroundImage: "url(" + image + ")",
         transform: transform,
       }}

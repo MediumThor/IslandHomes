@@ -23,6 +23,8 @@ import SectionTabs2 from "pages-sections/Components-Sections/SectionTabs2.js";
 import SectionTabs3 from "pages-sections/Components-Sections/SectionTabs3.js";
 import SectionTabs4 from "pages-sections/Components-Sections/SectionTabs3.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+import FancyButton from "components/FancyButton.tsx"
+import ButtonBar from "pages-sections/Components-Sections/ButtonBar.js"
 
 
 import SectionBasicInfo from "pages-sections/Components-Sections/SectionBasicInfo.js";
@@ -57,6 +59,7 @@ export default function Components(props) {
   return (
     <div>
       
+      
       <Header
       src= "https://i.imgur.com/FvYwDbj.jpg"
         brand="PWYC"
@@ -70,8 +73,26 @@ export default function Components(props) {
         }}
         {...rest}
       />
+      <div>  <Parallax blur={{ min: -1, max: 3 }} image="https://i.imgur.com/yM5c93L.jpg"
+      >
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem >
+              <div className={classes.brand}>
+                <h1 className={classes.title}>PWYC</h1>
+                <h3 className={classes.subtitle}>
+                 Port Washington, Wisconsin
+                </h3>
+              </div>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax></div>
+    
+      <ButtonBar/>
+
       <Parallax image="https://i.imgur.com/yM5c93L.jpg"
-      blur={{min:0, max:5}}>
+      >
         <div className={classes.container}>
           <GridContainer>
             <GridItem >
@@ -85,11 +106,17 @@ export default function Components(props) {
           </GridContainer>
         </div>
       </Parallax>
+      <GridContainer>  
+        <GridItem><FancyButton/></GridItem></GridContainer>
+      
       
       <div className={classNames(classes.main, classes.mainRaised)}>
       <SectionBasicInfo />
+
       
       </div>
+
+      
 
       <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
       blur={{ min: -10, max: 200 }}>
