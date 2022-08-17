@@ -65,7 +65,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image="https://i.imgur.com/G0HDv0n.png">
+      <Parallax filter responsive image="https://i.imgur.com/LJAaNAN.jpeg">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -195,6 +195,7 @@ export default function LandingPage(props) {
                     href="https://www.pwycwi.com/images/PWYC_Application_-rev._2019.pdf">
             Submit Info to Club
                     </Button>
+                    
                     <Button
                       onClick={() => setClassicModal(false)}
                       color="danger"

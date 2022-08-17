@@ -9,6 +9,8 @@ import Build from "@material-ui/icons/Build";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+
+import Parallax from "components/Parallax/Parallax.js";
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
 
 import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
@@ -39,6 +41,24 @@ export default function SectionTabs() {
   </a>
 </Link>
           <GridContainer>
+          <Parallax image="http://www.pwycwi.com/images/PWYCHistorysmall.jpg"
+      blur={{ min: -100, max: 20 }}>
+        <div className={classes.container}>
+          <GridContainer>
+          <h1 className={classes.title}>PWYC</h1>
+            <GridItem >
+            <h1 className={classes.title}>PWYC</h1>
+
+              <div className={classes.brand}>
+                <h1 className={classes.title}>PWYC</h1>
+                <h3 className={classes.subtitle}>
+                 Port Washington, Wisconsin
+                </h3>
+              </div>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
            
           </GridContainer>
         </div>

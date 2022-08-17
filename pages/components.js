@@ -58,8 +58,9 @@ export default function Components(props) {
     <div>
       
       <Header
-      image= "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/294279993_492068979391607_5939258456021438813_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=grE8R_Tx-6cAX92mgbE&_nc_ht=scontent-ord5-1.xx&oh=00_AT-9TxhYvqBZeLA8-u8D_vLZ5LR40Fvt4mR3Yrjko_mLZA&oe=62ED11B7"
+      src= "https://i.imgur.com/FvYwDbj.jpg"
         brand="PWYC"
+        leftLinks
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -69,8 +70,8 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image="https://i.imgur.com/BhDre1N.jpeg"
-      blur={{ min: -100, max: 20 }}>
+      <Parallax image="https://i.imgur.com/yM5c93L.jpg"
+      blur={{min:0, max:5}}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem >

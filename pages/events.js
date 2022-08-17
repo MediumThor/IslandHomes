@@ -44,7 +44,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image="https://i.imgur.com/BhDre1N.jpeg">
+      <Parallax filter responsive image="https://i.imgur.com/aUvlF87.jpg">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -72,7 +72,7 @@ export default function LandingPage(props) {
           <SectionNotifications />
 
 
-          
+
         </div>
       </div>
       <Footer />

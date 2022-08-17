@@ -21,6 +21,7 @@ import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+import SectionHistory from "../pages-sections/Components-Sections/SectionHistory";
 
 const dashboardRoutes = [];
 
@@ -43,7 +44,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image="https://i.imgur.com/BhDre1N.jpeg">
+      <Parallax filter responsive image="https://i.imgur.com/yM5c93L.jpg">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -71,8 +72,9 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <TeamSection />
-          <WorkSection />
+        <SectionHistory />
+
+
         </div>
       </div>
       <Footer />
