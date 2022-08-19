@@ -13,7 +13,9 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import { Parallax } from 'react-parallax';
+import { Parallax, Background } from "react-parallax";
+import Badge from "../components/Badge/Badge";
+
 
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
@@ -35,6 +37,7 @@ import LogoButton from "pages-sections/Components-Sections/LogoButton.js"
 
 
 
+
 import SectionBasicInfo from "pages-sections/Components-Sections/SectionBasicInfo.js";
 import SectionNotifications from "pages-sections/Components-Sections/SectionNotifications.js";
 import SectionNotificationsHome from "pages-sections/Components-Sections/SectionNotificationsHome.js";
@@ -46,6 +49,10 @@ import SectionCompletedExamples from "pages-sections/Components-Sections/Section
 import SectionLogin from "pages-sections/Components-Sections/SectionLogin.js";
 import SectionExamples from "pages-sections/Components-Sections/SectionExamples.js";
 import SectionDownload from "pages-sections/Components-Sections/SectionDownload.js";
+import SectionPillsBackup from "pages-sections/Components-Sections/SectionPillsBackup.js";
+import SectionPillsRaces from "pages-sections/Components-Sections/SectionPillsRaces.js";
+
+
 
 import styles from "styles/jss/nextjs-material-kit/pages/components.js";
 import bg from "public/img/bg2.jpg";
@@ -63,7 +70,7 @@ const useStyles = makeStyles(styles);
    //     <SectionJavascript />
    //        <SectionExamples />
    const insideStyles = {
-    background: "white",
+    background: "transparent",
     padding: 20,
     position: "absolute",
     top: "50%",
@@ -90,7 +97,7 @@ export default function Components(props) {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 240,
+          height: 300,
           color: "white",
         }}
         {...rest}
@@ -100,7 +107,7 @@ export default function Components(props) {
      
     <Parallax
         blur={{ min: -15, max: 15 }}
-        bgImage="https://i.imgur.com/yM5c93L.jpg+https://i.imgur.com/LJAaNAN.jpeg"
+        bgImage="https://i.imgur.com/yM5c93L.jpg"
         bgImageAlt="the dog"
         
         strength={200}
@@ -113,15 +120,16 @@ export default function Components(props) {
               <div className={classes.brand}>
 
 
-                         <h3 className={classes.subtitle}>
-                         <div style={{ margin: '120px'}}>
+                         <div style={{ margin: '160px'}}>
       <img src={logo} style={{ marginTop:'30px', marginBottom:'200px',width: '200px', }}/>
     </div>
   
-                </h3>
+             
 
                 
               </div>
+           
+              <GridItem ><SectionNotificationsHome/></GridItem>
               
             </GridItem>
            
@@ -131,49 +139,57 @@ export default function Components(props) {
     </Parallax>
 
  
-
+    <Parallax strength={-100}>
+      <Background className="custom-bg">
+        <div
+          style={{
+            height: 2000,
+            width: 2000,
+            backgroundImage: "url('https://i.imgur.com/8CV5WAB.png')"
+          }}
+        />
+      </Background>
+  
+    
+                 
     <ButtonBar />
+    </Parallax>
         
   </div>
 
+
+
+
   <Parallax
-        blur={{ min: -12, max: 15 }}
+        blur={{ min: -10, max: 15 }}
         bgImage="https://i.imgur.com/LJAaNAN.jpeg"
-        bgImageAlt="the dog"
+        bgImageAlt="Black sails"
         
-        strength={-200}
+        
+        strength={-300}
     >
-        <div style={{ height: '70px' }} />
+        <div style={{ maxHeight: '70px' }} />
 
         <div className={classes.container}>
           <GridContainer>
           <div style={{ margin: '100px'}}>
-        <SectionNotificationsHome/>
-
-
+          <SectionPillsRaces/>
+       
+        
+          
         </div>
             <GridItem >
-              <div className={classes.brand}>
-
-
-                         <h3 className={classes.subtitle}>
-                         <div style={{ margin: '100px'}}>
-      <img  style={{ width: '000px', }}/>
-    </div>
-   
-                </h3>
-
-                
-              </div>
+             
               
               
             </GridItem>
-           
           </GridContainer>
-         
         </div>
-      
     </Parallax>
+
+
+
+
 <ButtonBar/>
 
     <Parallax
@@ -184,30 +200,40 @@ export default function Components(props) {
           <div
             style={{
               position: "absolute",
-              background: `rgba(255, 125, 120, ${percentage * 1})`,
+              background: `rgba(255, 152, 0, ${percentage * .7})`,
               left: "50%",
               top: "50%",
               borderRadius: "100%",
               transform: "translate(-50%,-50%)",
-              width: percentage * 500,
-              height: percentage * 500
+              width: percentage * 300,
+              height: percentage * 300
             }}
           />
         </div>
       )}
     >
       <div style={{ height: 500 }}>
-        <div style={insideStyles}>Event Calandar</div>
+        <div style={insideStyles}>
+          <Link href="/events">
+  <a className={classes.link}>
+  <Button color="info" round>
+      Event Calandar
+    </Button>
+  </a>
+</Link>
+
+</div>
       </div>
     </Parallax>
       
     <GridItem>
 
     
- 
+ <Card>
 
-    
-    <WorkSection/>
+ <WorkSection/>
+ </Card>
+  
       
   
     </GridItem>
@@ -215,11 +241,17 @@ export default function Components(props) {
   
  
      
-          
-   
-      <div >
-      <Footer/>      
-      </div>
+       <GridItem>
+       <Card>
+
+<Footer/>    
+</Card>
+         
+         </GridItem>   
+  
+      
+     
+      
       
 
 

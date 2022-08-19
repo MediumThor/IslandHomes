@@ -19,9 +19,9 @@ const images = [
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: 40,
-  [theme.breakpoints.down('sm')]: {
+  [theme.breakpoints.down('md')]: {
     width: '100% !important', // Overrides inline-style
-    height: 70,
+    height: 60,
   },
   '&:hover ': {
     zIndex: 1,
@@ -44,7 +44,7 @@ const ImageSrc = styled('span')({
   top: 0,
   bottom: 0,
   backgroundSize: 'cover',
-  backgroundPosition: 'center 40%',
+  backgroundPosition: 'center 50%',
 });
 
 const Image = styled('span')(({ theme }) => ({
