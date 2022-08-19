@@ -22,8 +22,7 @@ const useStyles = makeStyles(styles);
 export default function SectionTabs() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
-      <div className={classes.container}>
+  
         <div id="nav-tabs">
           <h1></h1>
           <Link href="/raceinfo">
@@ -45,7 +44,6 @@ export default function SectionTabs() {
            
           </GridContainer>
         </div>
-      </div>
-    </div>
+   
   );
 }

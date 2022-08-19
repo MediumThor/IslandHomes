@@ -13,6 +13,7 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
+import Parallax from "components/Parallax/Parallax.js";
 import { Parallax } from 'react-parallax';
 
 import Card from "components/Card/Card.js";
@@ -62,14 +63,7 @@ const useStyles = makeStyles(styles);
    //     <SectionTypography />
    //     <SectionJavascript />
    //        <SectionExamples />
-   const insideStyles = {
-    background: "white",
-    padding: 20,
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%,-50%)"
-  };
+
 
 
 export default function Components(props) {
@@ -90,116 +84,35 @@ export default function Components(props) {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 240,
+          height: 100,
           color: "white",
         }}
         {...rest}
       />
-      <div>  
-        
-     
-    <Parallax
-        blur={{ min: -15, max: 15 }}
-        bgImage="https://i.imgur.com/yM5c93L.jpg+https://i.imgur.com/LJAaNAN.jpeg"
-        bgImageAlt="the dog"
-        
-        strength={200}
-    >
-        <div style={{ height: '100px' }} />
-
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem >
-              <div className={classes.brand}>
-
-
-                         <h3 className={classes.subtitle}>
-                         <div style={{ margin: '120px'}}>
-      <img src={logo} style={{ marginTop:'30px', marginBottom:'200px',width: '200px', }}/>
-    </div>
-  
-                </h3>
-
-                
-              </div>
-              
-            </GridItem>
-           
-          </GridContainer>
-         
-        </div>
-    </Parallax>
-
- 
-
-    <ButtonBar />
-        
-  </div>
-
-  <Parallax
-        blur={{ min: -15, max: 15 }}
-        bgImage="https://i.imgur.com/LJAaNAN.jpeg"
-        bgImageAlt="the dog"
-        
-        strength={-200}
-    >
-        <div style={{ height: '70px' }} />
-
-        <div className={classes.container}>
-          <GridContainer>
-          <div style={{ margin: '200px'}}>
-        <SectionNotificationsHome/>
-
-
-        </div>
-            <GridItem >
-              <div className={classes.brand}>
-
-
-                         <h3 className={classes.subtitle}>
-                         <div style={{ margin: '100px'}}>
-      <img  style={{ width: '000px', }}/>
-    </div>
-   
-                </h3>
-
-                
-              </div>
-              
-              
-            </GridItem>
-           
-          </GridContainer>
-         
-        </div>
+      <div>  <Parallax  image="https://i.imgur.com/yM5c93L.jpg"
       
-    </Parallax>
+      >
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem >
+              <div className={classes.brand}>
 
 
-    <Parallax
-      bgImage="https://i.imgur.com/aUvlF87.jpg"
-      strength={400}
-      renderLayer={(percentage) => (
-        <div>
-          <div
-            style={{
-              position: "absolute",
-              background: `rgba(255, 125, 120, ${percentage * 1})`,
-              left: "50%",
-              top: "50%",
-              borderRadius: "100%",
-              transform: "translate(-50%,-50%)",
-              width: percentage * 500,
-              height: percentage * 500
-            }}
-          />
+                         <h3 className={classes.subtitle}>
+                         <div style={{ margin: '200px', marginTop: '80px' }}>
+      <img src={logo} style={{ width: '200px', }}/>
+    </div>
+                </h3>
+              </div>
+              
+            </GridItem>
+          </GridContainer>
+          
         </div>
-      )}
-    >
-      <div style={{ height: 500 }}>
-        <div style={insideStyles}>Event Calandar</div>
-      </div>
-    </Parallax>
+      </Parallax></div>
+
+<ButtonBar/>
+
       
     <GridItem>
 
@@ -213,8 +126,16 @@ export default function Components(props) {
     </GridItem>
     
   
- 
-     
+      <GridContainer>
+            <GridItem >
+            <div className={classNames(classes.main, classes.mainRaised)}>
+          
+
+      
+      </div>
+              
+            </GridItem>
+          </GridContainer>
           
    
       <div >
@@ -225,7 +146,11 @@ export default function Components(props) {
 
      
 
+    
+<div>
 
+
+</div>
      
     
     </div>

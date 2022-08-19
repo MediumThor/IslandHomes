@@ -19,8 +19,7 @@ export default function SectionNotifications() {
   const classes = useStyles();
   return (
 <div className={classes.container}>
-        <div className={classes.title}>
-      </div>
+    
       <SnackbarContent
         message={
           <span>
@@ -49,7 +48,7 @@ export default function SectionNotifications() {
       />
       
      
-      <Clearfix />
+    
     </div>
   );
 }

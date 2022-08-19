@@ -26,13 +26,13 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   '&:hover ': {
     zIndex: 1,
     '& .MuiImageBackdrop-root': {
-      opacity: 0.45,
+      opacity: 0.15,
     },
     '& .MuiImageMarked-root': {
       opacity: 0,
     },
     '& .MuiTypography-root': {
-      border: '4px solid currentColor',
+      border: '0px solid currentColor',
     },
   },
 }));
