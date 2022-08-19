@@ -14,7 +14,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
-import { Parallax } from 'react-parallax';
+
 
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
@@ -66,7 +66,7 @@ const useStyles = makeStyles(styles);
 
 
 
-export default function Components(props) {
+export default function Components2(props) {
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
