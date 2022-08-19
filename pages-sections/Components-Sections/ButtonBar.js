@@ -16,6 +16,8 @@ import FancyButton from "components/FancyButton.tsx";
 import FancyButtonRacing from "components/FancyButtonRacing.tsx";
 import FancyButtonSingleA from "components/FancyButtonSingleA.tsx";
 import FancyButtonSingleB from "components/FancyButtonSingleB.tsx";
+import FancyButtonSingleC from "components/FancyButtonSingleC.tsx";
+
 
 
 
@@ -38,6 +40,7 @@ export default function SectionTabs() {
           <FancyButtonRacing/>
           <FancyButtonSingleA/>
           <FancyButtonSingleB/>
+          <FancyButtonSingleC/>
       
           </div>
        

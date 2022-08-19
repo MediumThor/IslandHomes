@@ -7,8 +7,8 @@ import { Button } from '@mui/material';
 
 const images = [
   {
-    url: 'https://nickyboycharters.com/wp-content/uploads/2015/11/Boat_001.jpg',
-    title: 'Trips and Charters',
+    url: 'https://i.imgur.com/yM5c93L.jpg',
+    title: 'Become A Member',
     width: '100%',
     
   },
@@ -82,7 +82,7 @@ const ImageMarked = styled('span')(({ theme }) => ({
 
 export default function ButtonBases() {
   return (
-    <Button     href="/raceinfo"
+    <Button     href="/member"
     >
     <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 250, width: '100%' }}>
       {images.map((image) => (

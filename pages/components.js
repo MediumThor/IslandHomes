@@ -137,7 +137,7 @@ export default function Components(props) {
   </div>
 
   <Parallax
-        blur={{ min: -15, max: 15 }}
+        blur={{ min: -12, max: 15 }}
         bgImage="https://i.imgur.com/LJAaNAN.jpeg"
         bgImageAlt="the dog"
         

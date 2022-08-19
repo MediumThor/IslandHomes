@@ -83,7 +83,7 @@ export default function ButtonBases() {
   return (
     <Button     href="/events"
     >
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 350, width: '100%' }}>
+    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 250, width: '100%' }}>
       {images.map((image) => (
         <ImageButton
           focusRipple
