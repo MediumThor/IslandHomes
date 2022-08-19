@@ -112,20 +112,23 @@ export default function Components(props) {
         
         strength={200}
     >
+      
         <div style={{ height: '100px' }} />
+        
 
         <div className={classes.container}>
           <GridContainer>
             <GridItem >
+           
               <div className={classes.brand}>
+              
 
 
                          <div style={{ margin: '160px'}}>
       <img src={logo} style={{ marginTop:'30px', marginBottom:'200px',width: '200px', }}/>
+
+      <h1 style={{color: 'white'}}>  </h1>
     </div>
-    <div className={classes.title}>
-            <h1 style={{color: 'white'}}>   Summer Sail Racing   </h1>
-          </div>
   
              
 
