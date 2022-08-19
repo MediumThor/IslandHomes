@@ -51,14 +51,14 @@ export default function SectionPills() {
                 }}
                 tabs={[
                   {
-                    tabButton: "Dashboard",
+                    tabButton: "Information",
                     tabIcon: SailingIcon,
                     tabContent: (
                       <span style={{color: 'white'}}>
                          <p>
-                        Saturday Buoy racing series for both racing class and cruising class boats,
-                         are held on most Saturday afternoons and Wendsday evenings June through September.
-                        Two long distant weekend races, one to and from Sheboygan and the other to and from Milwaukee are fun races for which individual awards are given.
+                        Saturday Buoy racing series for both racing class and cruising class boats
+                         are held on most Saturday afternoons and Wendsday evenings June through September. Course length and route vary and are determined before the race.
+                        
                         </p>
                         <br />
                       

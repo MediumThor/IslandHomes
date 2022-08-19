@@ -59,6 +59,7 @@ import bg from "public/img/bg2.jpg";
 import TeamSection from "../pages-sections/LandingPage-Sections/TeamSection";
 
 import logo from "public/img/logoBLACK.png";
+import BGGif from "public/img/gifOne.gif";
 
 const useStyles = makeStyles(styles);
 //deleted sections:   <SectionBasics />
@@ -108,12 +109,14 @@ export default function Components(props) {
     <Parallax
         blur={{ min: -15, max: 15 }}
         bgImageAlt="https://i.imgur.com/yM5c93L.jpg"
-        bgImage="https://im3.ezgif.com/tmp/ezgif-3-5119786b27.gif"
+        bgImage={BGGif}
         
         strength={200}
     >
       
         <div style={{ height: '100px' }} />
+
+        
         
 
         <div className={classes.container}>
@@ -125,18 +128,20 @@ export default function Components(props) {
 
 
                          <div style={{ margin: '160px'}}>
-      <img src={logo} style={{ marginTop:'30px', marginBottom:'200px',width: '200px', }}/>
+      <img src={logo} style={{ marginTop:'0px', marginBottom:'50px',width: '200px', }}/>
 
-      <h1 style={{color: 'white'}}>  </h1>
-    </div>
+      <h1 style={{color: 'white'}}>   <GridContainer>
+
+<GridItem >
+  <SectionNotificationsHome/>
+  </GridItem>
   
-             
+</GridContainer>
 
-                
+</h1>
+    </div>
               </div>
-           
-              <GridItem ><SectionNotificationsHome/></GridItem>
-              
+          
             </GridItem>
            
           </GridContainer>
@@ -145,13 +150,13 @@ export default function Components(props) {
     </Parallax>
 
  
-    <Parallax strength={-100}>
+    <Parallax strength={400}>
       <Background className="custom-bg">
         <div
           style={{
             height: 2000,
             width: 2000,
-            backgroundImage: "url('https://i.imgur.com/8CV5WAB.png')"
+            backgroundImage: "url('https://getwallpapers.com/wallpaper/full/f/e/e/367521.jpg')"
           }}
         />
       </Background>
@@ -195,8 +200,21 @@ export default function Components(props) {
 
 
 
-
-<ButtonBar/>
+    <Parallax strength={-100}>
+      <Background className="custom-bg">
+        <div
+          style={{
+            height: 2000,
+            width: 2000,
+            backgroundImage: "url('https://getwallpapers.com/wallpaper/full/f/e/e/367521.jpg')"
+          }}
+        />
+      </Background>
+  
+    
+                 
+    <ButtonBar />
+    </Parallax>
 
     <Parallax
       bgImage="https://i.imgur.com/aUvlF87.jpg"
@@ -218,6 +236,17 @@ export default function Components(props) {
         </div>
       )}
     >
+
+<div className={classes.container}>
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={6}>
+              <h1 className={classes.title} style={{color: 'white'}}>  </h1>
+            
+              <br />
+           
+            </GridItem>
+          </GridContainer>
+        </div>
       <div style={{ height: 500 }}>
         <div style={insideStyles}>
           <Link href="/events">
@@ -232,17 +261,38 @@ export default function Components(props) {
       </div>
     </Parallax>
       
-    <GridItem>
+
+
+
+
+    <Parallax strength={-400}>
+      <Background className="custom-bg">
+        <div
+          style={{
+            height: 2000,
+            width: 2000,
+            backgroundImage: "url('https://getwallpapers.com/wallpaper/full/f/e/e/367521.jpg')"
+          }}
+        />
+      </Background>
+  
+    
+                 
+      <GridItem>
 
     
- <Card>
+<Badge color="transparent">
 
- <WorkSection/>
- </Card>
-  
-      
-  
-    </GridItem>
+<WorkSection/>
+
+</Badge>
+
+
+
+   </GridItem>
+   
+    </Parallax>
+    
     
   
  
@@ -250,7 +300,7 @@ export default function Components(props) {
        <GridItem>
        <Card>
 
-<Footer/>    
+<Footer />    
 </Card>
          
          </GridItem>   

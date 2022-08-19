@@ -21,7 +21,7 @@ import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
-import SectionNotifications from "pages-sections/Components-Sections/SectionNotifications.js"
+import SectionDownload from "pages-sections/Components-Sections/SectionTypography.js";
 
 const dashboardRoutes = [];
 
@@ -35,7 +35,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Back the Club"
+        brand="Enter the Club"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -44,35 +44,23 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image="https://i.imgur.com/aUvlF87.jpg">
+      <Parallax filter responsive image="https://i.imgur.com/BhDre1N.jpeg">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Social Events</h1>
+              <h1 className={classes.title}>Privacy Policy</h1>
               <h4>
-              Club activities include a year round social calendar that not only consists of a full schedule of fun parties, but also informal group trips anytime during the year.
-In addition, the Club participates in the city's Fish Day celebration and is involved in other community activities. Such activities include contributing funds to school scholarships and making the club available for charitable fund raising events.
-The clubhouse bar is open each Friday evening during the summer months for use by its members and visiting boaters from other yacht clubs.
-             
+              PWYCWI.com strives to offer its visitors the many advantages of Internet technology and to provide an interactive and personalized experience. We may use Personally Identifiable Information (your name, e-mail address, street address, telephone number) subject to the terms of this privacy policy. We will never sell, barter, or rent your email address to any unauthorized third party. Period.
               </h4>
               <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button>
+             
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionNotifications />
+          <SectionDownload/>
 
 
 
