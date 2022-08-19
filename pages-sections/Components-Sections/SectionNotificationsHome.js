@@ -32,7 +32,7 @@ export default function SectionNotifications() {
         message={
           <span>
             <b>NOR:</b> Sheboygan Race from Port Washington to Sheboygan on 8/20/22     
-            <Link href="/events">
+            <Link href="/sheboyganRace">
   <a className={classes.link} margin="100px">
   <Button color="success" round>
       Race Info

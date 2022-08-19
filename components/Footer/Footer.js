@@ -103,11 +103,18 @@ export default function Footer(props) {
      
      
     </footer>
-    <Link href="/privacy">
+    <Link href="/privacy" color="transparent">
   <a className={classes.link}>
-  <a>
+  <Button >
       Privacy Policy
-    </a>
+    </Button>
+  </a>
+</Link>
+<Link href="/privacy" color="transparent">
+  <a className={classes.link}>
+  <Button >
+      Terms Of Service
+    </Button>
   </a>
 </Link>
     </Badge>

@@ -19,14 +19,20 @@ import Badge from "../components/Badge/Badge";
 
 import Card from "components/Card/Card.js";
 
+
+
+
 import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
-import SectionPrivacy from "pages-sections/Components-Sections/SectionPrivacy.js";
+import SectionNotifications from "pages-sections/Components-Sections/SectionNotifications.js";
+import SectionNOR from "pages-sections/Components-Sections/SectionNOR.js";
 
+
+import NOR from "public/img/PWYC to SYC 2022.png"
 
 const dashboardRoutes = [];
 
@@ -40,7 +46,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Enter the Club"
+        brand="Back the Club"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -49,23 +55,28 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image="https://i.imgur.com/BhDre1N.jpeg">
+      <Parallax filter responsive image="https://i.imgur.com/aUvlF87.jpg">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Privacy Policy</h1>
+              <h1 className={classes.title}>Port Washington to Sheboygan Race</h1>
               <h4>
-              PWYCWI.com strives to offer its visitors the many advantages of Internet technology and to provide an interactive and personalized experience. We may use Personally Identifiable Information (your name, e-mail address, street address, telephone number) subject to the terms of this privacy policy. We will never sell, barter, or rent your email address to any unauthorized third party. Period.
+              We'd like to wecome all Skippers and crew to join us in our annual sprint from Port Washington to Sheboygan. 
+              There will be an award ceremony and individual torphies presented after the race.
+              </h4>
+
+              <h4>
+             See the official NOR below
               </h4>
               <br />
-             
+            
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionPrivacy/>
+       <SectionNOR/>
 
 
 
