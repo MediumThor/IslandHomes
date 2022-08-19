@@ -115,28 +115,10 @@ export default function Components(props) {
     <GridItem>
 
     
-    <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
-      >
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem >
-              <div className={classes.brand}>
-                <h1 className={classes.title}>Summer Buoy Racing</h1>
-                <h3 className={classes.subtitle}>
-                Wednesday evenings and Saturday afternoons
-                </h3>
-              </div>
-            </GridItem>
-          </GridContainer>
-        </div>
-        
-      </Parallax>
+ 
 
-      <div>
-      <SectionTabs />
-
-      </div>
-   
+    
+    <WorkSection/>
       
   
     </GridItem>
@@ -152,7 +134,7 @@ export default function Components(props) {
               
             </GridItem>
           </GridContainer>
-          <WorkSection/>
+          
    
       <div >
       <Footer/>      
