@@ -29,7 +29,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
       opacity: 0.15,
     },
     '& .MuiImageMarked-root': {
-      opacity: 0,
+      opacity: 10,
     },
     '& .MuiTypography-root': {
       border: '0px solid currentColor',

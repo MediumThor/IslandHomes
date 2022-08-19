@@ -147,7 +147,7 @@ export default function Components(props) {
 
         <div className={classes.container}>
           <GridContainer>
-          <div style={{ margin: '200px'}}>
+          <div style={{ margin: '100px'}}>
         <SectionNotificationsHome/>
 
 
@@ -174,7 +174,7 @@ export default function Components(props) {
         </div>
       
     </Parallax>
-
+<ButtonBar/>
 
     <Parallax
       bgImage="https://i.imgur.com/aUvlF87.jpg"
