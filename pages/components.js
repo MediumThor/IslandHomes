@@ -15,6 +15,11 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import CardFooter from "components/Card/CardFooter.js";
+
+
 // sections for this page
 import SectionBasics from "pages-sections/Components-Sections/SectionBasics.js";
 import SectionNavbars from "pages-sections/Components-Sections/SectionNavbars.js";
@@ -25,10 +30,15 @@ import SectionTabs4 from "pages-sections/Components-Sections/SectionTabs3.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 import FancyButton from "components/FancyButton.tsx"
 import ButtonBar from "pages-sections/Components-Sections/ButtonBar.js"
+import LogoButton from "pages-sections/Components-Sections/LogoButton.js"
+
+
 
 
 import SectionBasicInfo from "pages-sections/Components-Sections/SectionBasicInfo.js";
 import SectionNotifications from "pages-sections/Components-Sections/SectionNotifications.js";
+import SectionNotificationsHome from "pages-sections/Components-Sections/SectionNotificationsHome.js";
+
 import SectionTypography from "pages-sections/Components-Sections/SectionTypography.js";
 import SectionJavascript from "pages-sections/Components-Sections/SectionJavascript.js";
 import SectionCarousel from "pages-sections/Components-Sections/SectionCarousel.js";
@@ -40,6 +50,8 @@ import SectionDownload from "pages-sections/Components-Sections/SectionDownload.
 import styles from "styles/jss/nextjs-material-kit/pages/components.js";
 import bg from "public/img/bg2.jpg";
 import TeamSection from "../pages-sections/LandingPage-Sections/TeamSection";
+
+import logo from "public/img/logoBLACK.png";
 
 const useStyles = makeStyles(styles);
 //deleted sections:   <SectionBasics />
@@ -55,13 +67,16 @@ const useStyles = makeStyles(styles);
 
 export default function Components(props) {
   const classes = useStyles();
+  const imageClasses = classNames(
+    classes.imgRaised,
+    classes.imgRoundedCircle,
+    classes.imgFluid)
   const { ...rest } = props;
   return (
     <div>
       
       
       <Header
-      src= "https://i.imgur.com/FvYwDbj.jpg"
         brand="PWYC"
         leftLinks
         rightLinks={<HeaderLinks />}
@@ -73,53 +88,35 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <div>  <Parallax blur={{ min: -1, max: 3 }} image="https://i.imgur.com/yM5c93L.jpg"
+      <div>  <Parallax  image="https://i.imgur.com/yM5c93L.jpg"
       >
         <div className={classes.container}>
           <GridContainer>
             <GridItem >
               <div className={classes.brand}>
-                <h1 className={classes.title}>PWYC</h1>
-                <h3 className={classes.subtitle}>
-                 Port Washington, Wisconsin
+
+
+                         <h3 className={classes.subtitle}>
+                         <div style={{ margin: '200px', marginTop: '80px' }}>
+      <img src={logo} style={{ width: '200px', }}/>
+    </div>
                 </h3>
               </div>
+              
             </GridItem>
           </GridContainer>
+          
         </div>
       </Parallax></div>
+
+<ButtonBar/>
+
+      
+    <GridItem>
+
     
-      <ButtonBar/>
-
-      <Parallax image="https://i.imgur.com/yM5c93L.jpg"
+    <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
       >
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem >
-              <div className={classes.brand}>
-                <h1 className={classes.title}>PWYC</h1>
-                <h3 className={classes.subtitle}>
-                 Port Washington, Wisconsin
-                </h3>
-              </div>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </Parallax>
-      <GridContainer>  
-        <GridItem><FancyButton/></GridItem></GridContainer>
-      
-      
-      <div className={classNames(classes.main, classes.mainRaised)}>
-      <SectionBasicInfo />
-
-      
-      </div>
-
-      
-
-      <Parallax image="https://i.imgur.com/LJAaNAN.jpeg"
-      blur={{ min: -10, max: 200 }}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem >
@@ -134,31 +131,30 @@ export default function Components(props) {
         </div>
         
       </Parallax>
-      
+
       <div>
       <SectionTabs />
 
       </div>
    
-
       
-
-
   
+    </GridItem>
+    
   
-   
-
-
       <GridContainer>
             <GridItem >
-              <div className={classes.brand}>
-               <WorkSection/>
-              </div>
+            <div className={classNames(classes.main, classes.mainRaised)}>
+          
+
+      
+      </div>
+              
             </GridItem>
           </GridContainer>
-
+          <WorkSection/>
    
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div >
       <Footer/>      
       </div>
       

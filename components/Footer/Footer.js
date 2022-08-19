@@ -41,11 +41,8 @@ export default function Footer(props) {
               >
                 Location
               </a>
-              <div>  <p>PO BOX 101</p>
-              <p>430 N. Lake Street</p>
-              <p>Port Washington</p>
-              <p>WI</p>
-              <p>53074</p></div>
+              <div>  <p>PO BOX 101 430 N. Lake Street Port Washington WI 53074</p>
+            </div>
             
 
             </ListItem>

@@ -12,6 +12,15 @@ import GridItem from "components/Grid/GridItem.js";
 
 import Parallax from "components/Parallax/Parallax.js";
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
+import FancyButton from "components/FancyButton.tsx";
+import FancyButtonRacing from "components/FancyButtonRacing.tsx";
+import FancyButtonSingleA from "components/FancyButtonSingleA.tsx";
+import FancyButtonSingleB from "components/FancyButtonSingleB.tsx";
+import LogoButton from "components/LogoButton.tsx";
+
+
+
+
 
 import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
 import SectionCarousel from "./SectionCarousel";
@@ -22,26 +31,18 @@ const useStyles = makeStyles(styles);
 export default function SectionTabs() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
-      <div className={classes.container}>
+    <div >
+      <div className={classes.container} color='primary'>
         <div id="nav-tabs">
-          <h1></h1>
-          <Link href="/raceinfo">
-  <a className={classes.link}>
-  <Button color="info" round>
-        Info
-    </Button>
-  </a>
-</Link>
-<Link href="/raceinfo">
-  <a className={classes.link}>
-  <Button color="warning" round>
-      Racing Crew/ Find A Boat
-    </Button>
-  </a>
-</Link>
-          <GridContainer>
+        
+          <div>
+          <LogoButton/>
       
+          </div>
+       
+          
+          <GridContainer>
+
            
           </GridContainer>
         </div>
