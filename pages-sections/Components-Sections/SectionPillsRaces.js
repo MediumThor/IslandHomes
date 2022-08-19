@@ -30,7 +30,7 @@ export default function SectionPills() {
       <div className={classes.container}>
         <div id="navigation-pills">
           <div className={classes.title}>
-            <h3>       </h3>
+            <h1 style={{color: 'white'}}>   Summer Sail Racing   </h1>
           </div>
           <div className={classes.title}>
             <h3>

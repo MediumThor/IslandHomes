@@ -107,8 +107,8 @@ export default function Components(props) {
      
     <Parallax
         blur={{ min: -15, max: 15 }}
-        bgImage="https://i.imgur.com/yM5c93L.jpg"
-        bgImageAlt="the dog"
+        bgImageAlt="https://i.imgur.com/yM5c93L.jpg"
+        bgImage="https://im3.ezgif.com/tmp/ezgif-3-5119786b27.gif"
         
         strength={200}
     >
@@ -123,6 +123,9 @@ export default function Components(props) {
                          <div style={{ margin: '160px'}}>
       <img src={logo} style={{ marginTop:'30px', marginBottom:'200px',width: '200px', }}/>
     </div>
+    <div className={classes.title}>
+            <h1 style={{color: 'white'}}>   Summer Sail Racing   </h1>
+          </div>
   
              
 
