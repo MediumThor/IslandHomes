@@ -18,10 +18,19 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
+import Link from "next/link";
+import Userfront from "@userfront/react";
+
 
 import styles from "styles/jss/nextjs-material-kit/pages/loginPage.js";
 
 const useStyles = makeStyles(styles);
+
+Userfront.init("demo1234");
+
+const SignupForm = Userfront.build({
+  toolId: "nkmbbm",
+});
 
 export default function LoginPage(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
@@ -140,10 +149,71 @@ export default function LoginPage(props) {
                       Get started
                     </Button>
                   </CardFooter>
+
+
                 </form>
               </Card>
+
+    
+
+
+<div>
+
+<GridContainer>
+<GridItem>
+
+<Card>
+<div>
+      <h2>Home</h2>
+      <SignupForm />
+    </div>
+
+<Link href="/Login">
+<a className={classes.link}>
+<Button color="warning" round>
+Login
+</Button>
+</a>
+</Link>
+
+<Link href="/reset">
+<a className={classes.link}>
+<Button color="warning" round>
+reset
+</Button>
+</a>
+</Link>
+
+<Link href="/Dashboard">
+<a className={classes.link}>
+<Button color="warning" round>
+Dashboard
+</Button>
+</a>
+</Link>
+
+
+
+</Card>
+  
+  </GridItem> 
+
+
+</GridContainer>
+
+</div>
+
+
+
+
+
+
+
+
             </GridItem>
           </GridContainer>
+
+
         </div>
         <Footer whiteFont />
       </div>

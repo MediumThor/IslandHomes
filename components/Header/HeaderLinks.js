@@ -8,15 +8,26 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 import Icon from "@material-ui/core/Icon";
+import Slide from "@material-ui/core/Slide";
+
 
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
 import AirIcon from '@mui/icons-material/Air';
 import DeleteIcon from "@material-ui/icons/Delete";
-import IconButton from "@material-ui/core/IconButton";
 import CardMembershipIcon from '@mui/icons-material/CardMembership';
 import SailingIcon from '@mui/icons-material/Sailing';
 import AddLocationIcon from '@mui/icons-material/AddLocation';
+
+import IconButton from "@material-ui/core/IconButton";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
+import LibraryBooks from "@material-ui/icons/LibraryBooks";
+import Close from "@material-ui/icons/Close";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -24,10 +35,29 @@ import Button from "components/CustomButtons/Button.js";
 
 import styles from "styles/jss/nextjs-material-kit/components/headerLinksStyle.js";
 
+import LoginPage from "pages/loginOLD.js"
+
+
+//react dom 
+
+
+
 const useStyles = makeStyles(styles);
 
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
+
+Transition.displayName = "Transition";
+
+
+
 export default function HeaderLinks(props) {
+
+  
   const classes = useStyles();
+  const [classicModal, setClassicModal] = React.useState(false);
+
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -121,13 +151,9 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
-              <Link href="/login">
-  <a className={classes.link}>
-  <Button color="warning" round>
-      Login
-    </Button>
-  </a>
-</Link>
+
+     
+              
       <ListItem className={classes.listItem}>
         <Button
           href="/member"
@@ -198,8 +224,89 @@ export default function HeaderLinks(props) {
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
+
+
         </Tooltip>
+    
+
+
       </ListItem>
+      <GridContainer>
+      <Button color="transparent" simple
+                    href="/loginNew">
+LOGIN NEW                    </Button>
+              <GridItem sm={12}>
+      <Button
+                  color="Danger"
+                  
+                  onClick={() => setClassicModal(true)}
+                >
+                 
+                 Login
+                </Button>
+                <Dialog
+                  classes={{
+                    root: classes.center,
+                    paper: classes.modal,
+                  }}
+                  open={classicModal}
+                  TransitionComponent={Transition}
+                  keepMounted
+                  onClose={() => setClassicModal(false)}
+                  aria-labelledby="classic-modal-slide-title"
+                  aria-describedby="classic-modal-slide-description"
+                >
+                  <DialogTitle
+                    id="classic-modal-slide-title"
+                    disableTypography
+                    className={classes.modalHeader}
+                  >
+                    <IconButton
+                      className={classes.modalCloseButton}
+                      key="close"
+                      aria-label="Close"
+                      color="inherit"
+                      onClick={() => setClassicModal(false)}
+                    >
+                      <Close className={classes.modalClose} />
+                    </IconButton>
+                    <h4 className={classes.modalTitle}>Login</h4>
+                  </DialogTitle>
+                  <DialogContent
+                    id="classic-modal-slide-description"
+                    className={classes.modalBody}
+                  >
+                 
+<LoginPage />
+
+
+                   
+                  </DialogContent>
+                  <DialogActions className={classes.modalFooter}>
+                    <Button color="transparent" simple
+                    href="https://www.pwycwi.com/images/PWYC_Application_-rev._2019.pdf">
+                      Print Membership Form
+                    </Button>
+                    <Button
+                      onClick={() => setClassicModal(false)}
+                      color="danger"
+                      simple
+                    >
+                      Close
+                    </Button>
+                  </DialogActions>
+                </Dialog>
+                </GridItem>
+                </GridContainer>
+      
     </List>
+
+
+    
   );
+
+
+
+
 }
+
