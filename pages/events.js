@@ -14,6 +14,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
+import Card from "components/Card/Card.js";
 
 import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 
@@ -78,7 +79,13 @@ The clubhouse bar is open each Friday evening during the summer months for use b
 
         </div>
       </div>
-      <Footer />
+      <GridItem>
+       <Card>
+
+<Footer />    
+</Card>
+         
+         </GridItem>   
     </div>
   );
 }

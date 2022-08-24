@@ -35,7 +35,7 @@ import Button from "components/CustomButtons/Button.js";
 
 import styles from "styles/jss/nextjs-material-kit/components/headerLinksStyle.js";
 
-import LoginPage from "pages/loginOLD.js"
+import LoginPage from "components/Login.js"
 
 
 //react dom 
@@ -232,12 +232,10 @@ export default function HeaderLinks(props) {
 
       </ListItem>
       <GridContainer>
-      <Button color="transparent" simple
-                    href="/loginNew">
-LOGIN NEW                    </Button>
+
               <GridItem sm={12}>
       <Button
-                  color="Danger"
+                  color="warning" round
                   
                   onClick={() => setClassicModal(true)}
                 >
@@ -270,7 +268,11 @@ LOGIN NEW                    </Button>
                     >
                       <Close className={classes.modalClose} />
                     </IconButton>
-                    <h4 className={classes.modalTitle}>Login</h4>
+                    <h4 className={classes.modalTitle}>
+                    
+                    
+                    
+                    </h4>
                   </DialogTitle>
                   <DialogContent
                     id="classic-modal-slide-description"
@@ -283,10 +285,7 @@ LOGIN NEW                    </Button>
                    
                   </DialogContent>
                   <DialogActions className={classes.modalFooter}>
-                    <Button color="transparent" simple
-                    href="https://www.pwycwi.com/images/PWYC_Application_-rev._2019.pdf">
-                      Print Membership Form
-                    </Button>
+                  
                     <Button
                       onClick={() => setClassicModal(false)}
                       color="danger"
@@ -309,4 +308,11 @@ LOGIN NEW                    </Button>
 
 
 }
+
+
+
+// WORKING LOGIN BUTTON
+//      <Button color="warning" round
+//href="/loginNew">
+//LOGIN                   </Button>
 

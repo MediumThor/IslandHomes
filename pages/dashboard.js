@@ -14,9 +14,12 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
+import Muted from "components/Typography/Muted.js";
+
 
 import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 import Userfront from "@userfront/react";
+
 
 
 // Sections for this page
@@ -25,6 +28,15 @@ import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 import SectionMembership from "../pages-sections/Components-Sections/SectionMembership";
 import { Card } from "@material-ui/core";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  Redirect,
+  useLocation,
+} from "react-router-dom";
 
 
 const dashboardRoutes = [];
@@ -35,6 +47,27 @@ const useStyles = makeStyles(styles);
 export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  function RequireAuth({ children }) {
+    
+
+  
+    
+    if (!Userfront.tokens.accessToken) {
+      // Redirect to the /login page
+
+    
+      return  <div to="/login" />; 
+
+    
+      
+    }
+  
+    return children;
+  }
+  
+
+
+  
   return (
     <div>
       <Header
@@ -53,28 +86,40 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
+
+
+              <RequireAuth>
+
+             
               <h1 className={classes.title}>Members Only Dashboard</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+               This is a members-only section. To return to the main site you will need to log out here:
               </h4>
+              <div>
+          
+        
+<Button onClick={Userfront.logout}
+href="/components">Logout</Button>
+          </div>
               <br />
-            
+              </RequireAuth>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionMembership />
-          <div>
-          <pre>{userData}</pre>
+          
+          <RequireAuth>
 
-<Button onClick={Userfront.logout}
-href="/components">Logout</Button>
-          </div>
+          <h1><Muted className={classes.title}>YOU ARE LOGGED IN </Muted></h1>
+          <Muted className={classes.title}><pre>{userData}</pre></Muted>
+          
+          
+         <ProductSection/>
+
+          </RequireAuth>
+
        
         </div>
      
@@ -82,4 +127,6 @@ href="/components">Logout</Button>
     
     </div>
   );
+  
 }
+

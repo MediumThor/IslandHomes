@@ -12,12 +12,14 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+import Card from "components/Card/Card.js";
+
 import Button from "components/CustomButtons/Button.js";
 import { Parallax, Background } from "react-parallax";
 import Badge from "../components/Badge/Badge";
 
 
-import Card from "components/Card/Card.js";
+
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 
@@ -133,7 +135,7 @@ export default function Components(props) {
       <h1 style={{color: 'white'}}>   <GridContainer>
 
 <GridItem >
-  <SectionNotificationsHome/>
+
   </GridItem>
   
 </GridContainer>
