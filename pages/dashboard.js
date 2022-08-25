@@ -17,6 +17,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import Muted from "components/Typography/Muted.js";
 
 
+
 import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 import Userfront from "@userfront/react";
 
@@ -28,12 +29,24 @@ import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 import SectionMembership from "../pages-sections/Components-Sections/SectionMembership";
 import { Card } from "@material-ui/core";
+import Calandar from "components/Calandar/calandar.js"
+import MemberSection from "pages-sections/LandingPage-Sections/MemberSection.js"
+import styled from 'styled-components';
+
+import { Link } from 'react-scroll';
+
+import Navbar from "components/MemberSection/Navbar.jsx";
+import Section1 from "components/MemberSection/Section1.jsx";
+import Section2 from "components/MemberSection/Section2.jsx";
+import Section3 from "components/MemberSection/Section3.jsx";
+
+
 
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
+
   Redirect,
   useLocation,
 } from "react-router-dom";
@@ -41,11 +54,15 @@ import {
 
 const dashboardRoutes = [];
 const userData = JSON.stringify(Userfront.user, null, 2);
+const userName = JSON.stringify(Userfront.user.username, null, 2);
 
-const useStyles = makeStyles(styles);
+
+
+
+
 
 export default function LandingPage(props) {
-  const classes = useStyles();
+  const useStyles = makeStyles(styles);
   const { ...rest } = props;
   function RequireAuth({ children }) {
     
@@ -67,64 +84,75 @@ export default function LandingPage(props) {
   
 
 
-  
+  const classes = useStyles();
   return (
+    
     <div>
-      <Header
-        color="transparent"
-        routes={dashboardRoutes}
-        brand="Enter the Club"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 300,
-          color: "white",
-        }}
-        {...rest}
-      />
+      
+   
+      
       <Parallax filter responsive image="https://i.imgur.com/BhDre1N.jpeg">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
+              
 
 
               <RequireAuth>
+               
 
-             
+
               <h1 className={classes.title}>Members Only Dashboard</h1>
               <h4>
                This is a members-only section. To return to the main site you will need to log out here:
               </h4>
+
+              
               <div>
-          
         
 <Button onClick={Userfront.logout}
 href="/components">Logout</Button>
           </div>
               <br />
+              <GridContainer >
+        <GridItem xs={12} sm={12} md={8}>
+
+         
+        <h2 className={classes.description} >Hello, {userName} you are logged in</h2>
+
+    
+        </GridItem>
+      </GridContainer>
+      
               </RequireAuth>
             </GridItem>
           </GridContainer>
         </div>
+        
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-          
-          <RequireAuth>
 
-          <h1><Muted className={classes.title}>YOU ARE LOGGED IN </Muted></h1>
-          <Muted className={classes.title}><pre>{userData}</pre></Muted>
-          
-          
-         <ProductSection/>
+      <Navbar/>
+      <div>
 
-          </RequireAuth>
+        
+      <Section1/>
+           <Section2/>
+           <Section3/>
 
-       
-        </div>
+
+      </div>
+        
+      
      
-      </div >
-    
+     
+      
+     
+
+          
+
+      
+      
+      
     </div>
   );
   

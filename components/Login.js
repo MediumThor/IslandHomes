@@ -8,8 +8,8 @@ Userfront.init("6nz4p46n");
 
 
 const SignupForm = Userfront.build({
-  toolId: "nkmbbm",
-});
+    toolId: "onmrdl"
+  });
 const LoginForm = Userfront.build({
   toolId: "dbnkdr"
 });
@@ -32,8 +32,8 @@ export default function app() {
 function Home() {
   return (
     <div>
-      <h2>lkjdfcoiasj</h2>
-      <LoginForm />
+      <h2></h2>
+      <SignupForm />
     </div>
   );
 }

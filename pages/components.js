@@ -108,13 +108,12 @@ export default function Components(props) {
       <div>  
         
      
-    <Parallax
-        blur={{ min: -15, max: 15 }}
-        bgImageAlt="https://i.imgur.com/yM5c93L.jpg"
-        bgImage={BGGif}
+   <Parallax strength={300}>
+        <Background className="custom-bg">
+            <img src={BGGif} alt="fill murray" />
+        </Background>
         
-        strength={200}
-    >
+
       
         <div style={{ height: '100px' }} />
 

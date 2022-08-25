@@ -34,7 +34,7 @@ export default function TeamSection() {
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
-                  src="https://i.imgur.com/t7RcT.jpeg"
+                  src="https://i.imgur.com/34xKXlL.png"
                   alt="..."
                   className={imageClasses}
                 />
@@ -121,7 +121,7 @@ export default function TeamSection() {
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
-                  src="https://i.imgur.com/t7RcT.jpeg"
+                  src="https://i.imgur.com/34xKXlL.png"
                   alt="..."
                   className={imageClasses}
                 />

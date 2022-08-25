@@ -25,6 +25,7 @@ import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import IconButton from "@material-ui/core/IconButton";
+import Card from "components/Card/Card.js";
 
 
 import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
@@ -36,6 +37,7 @@ import TeamSection2 from "pages-sections/LandingPage-Sections/TeamSection2.js";
 import TeamSectionCruising from "pages-sections/LandingPage-Sections/TeamSectionCruising.js"
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 import SectionBasics from "../pages-sections/Components-Sections/SectionBasics";
+import SectionTypography from "../pages-sections/Components-Sections/SectionTypography";
 
 const dashboardRoutes = [];
 
@@ -84,7 +86,7 @@ export default function LandingPage(props) {
                 round
               >
                 <i className="" />
-                Event Calandar
+                Event Calendar
               </Button>
               <Button
                 color="Success"
@@ -94,7 +96,7 @@ export default function LandingPage(props) {
                 rel="noopener noreferrer"
               >
                 <i className="" />
-                Event Calandar
+                Event Calendar
               </Button>
             </GridItem>
           </GridContainer>
@@ -218,10 +220,16 @@ export default function LandingPage(props) {
           <TeamSection2 />
           <TeamSectionCruising />
           <WorkSection />
-          <SectionBasics />
+          <SectionTypography />
         </div>
       </div>
-      <Footer />
+      <GridItem>
+       <Card>
+
+<Footer />    
+</Card>
+         
+         </GridItem>   
     </div>
   );
 }
