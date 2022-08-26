@@ -18,6 +18,7 @@ import Button from "components/CustomButtons/Button.js";
 import { Parallax, Background } from "react-parallax";
 import Badge from "../components/Badge/Badge";
 
+import Box from '@mui/material/Box';
 
 
 import CardBody from "components/Card/CardBody.js";
@@ -35,6 +36,7 @@ import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 import FancyButton from "components/FancyButton.tsx"
 import ButtonBar from "pages-sections/Components-Sections/ButtonBar.js"
 import LogoButton from "pages-sections/Components-Sections/LogoButton.js"
+import CarouselA from "pages-sections/Components-Sections/SectionCarouselA.js"
 
 
 
@@ -59,6 +61,8 @@ import SectionPillsRaces from "pages-sections/Components-Sections/SectionPillsRa
 import styles from "styles/jss/nextjs-material-kit/pages/components.js";
 import bg from "public/img/bg2.jpg";
 import TeamSection from "../pages-sections/LandingPage-Sections/TeamSection";
+import { styled } from '@mui/material/styles';
+
 
 import logo from "public/img/logoBLACK.png";
 import BGGif from "public/img/gifOne.gif";
@@ -81,6 +85,20 @@ const useStyles = makeStyles(styles);
     transform: "translate(-50%,-50%)"
   };
 
+  const BoxA = styled('div')(({ theme }) => ({
+    position: 'center',
+   
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    display: 'flex',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    color: theme.palette.common.white,
+    width:200,
+    height:200,
+  }));
 
 export default function Components(props) {
   const classes = useStyles();
@@ -107,15 +125,31 @@ export default function Components(props) {
       />
       <div>  
         
-     
-   <Parallax strength={300}>
-        <Background className="custom-bg">
-            <img src={BGGif} alt="fill murray" />
-        </Background>
-        
+     <Background>
 
-      
-        <div style={{ height: '100px' }} />
+    
+  
+
+        <Parallax 
+        blur={{ min: -15, max: 15 }}
+        strength={300}
+
+                bgImage={BGGif}
+        renderLayer={percentage => (
+            <div 
+                style={{
+                  
+                    position: 'absolute',
+                    left: '20%',
+                    top: '20%',
+                    width: percentage * 70,
+                    height: percentage * 70,
+                }}
+            />
+        )}
+    >
+
+        <div style={{ height: '0px' }} />
 
         
         
@@ -129,7 +163,7 @@ export default function Components(props) {
 
 
                          <div style={{ margin: '160px'}}>
-      <img src={logo} style={{ marginTop:'0px', marginBottom:'50px',width: '200px', }}/>
+      <img src={logo} style={{ marginTop:'0px', marginBottom:'50px',width: '250px', }}/>
 
       <h1 style={{color: 'white'}}>   <GridContainer>
 
@@ -149,7 +183,7 @@ export default function Components(props) {
          
         </div>
     </Parallax>
-
+    </Background>
  
     <Parallax strength={400}>
       <Background className="custom-bg">
@@ -159,6 +193,7 @@ export default function Components(props) {
             width: 2000,
             backgroundImage: "url('https://getwallpapers.com/wallpaper/full/f/e/e/367521.jpg')"
           }}
+          
         />
       </Background>
   
@@ -180,7 +215,7 @@ export default function Components(props) {
         
         strength={-300}
     >
-        <div style={{ maxHeight: '70px' }} />
+        <div style={{ maxHeight: '10px' }} />
 
         <div className={classes.container}>
           <GridContainer>
@@ -253,7 +288,7 @@ export default function Components(props) {
           <Link href="/events">
   <a className={classes.link}>
   <Button color="info" round>
-      Event Calandar
+      Event Calendar
     </Button>
   </a>
 </Link>
@@ -278,7 +313,7 @@ export default function Components(props) {
       </Background>
   
     
-                 
+     
       <GridItem>
 
     
@@ -289,9 +324,7 @@ export default function Components(props) {
 </Badge>
 
 
-
    </GridItem>
-   
     </Parallax>
     
     

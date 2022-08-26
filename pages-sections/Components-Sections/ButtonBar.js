@@ -17,14 +17,13 @@ import FancyButtonRacing from "components/FancyButtonRacing.tsx";
 import FancyButtonSingleA from "components/FancyButtonSingleA.tsx";
 import FancyButtonSingleB from "components/FancyButtonSingleB.tsx";
 import FancyButtonSingleC from "components/FancyButtonSingleC.tsx";
-
+import CarouselA from "./SectionCarouselA";
 
 
 
 
 
 import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
-import SectionCarousel from "./SectionCarousel";
 import Button from "components/CustomButtons/Button.js";
 import Link from "next/link";
 const useStyles = makeStyles(styles);
@@ -33,22 +32,29 @@ export default function SectionTabs() {
   const classes = useStyles();
   return (
     <div >
-      <div className={classes.container} color='primary'>
-        <div id="nav-tabs">
+      <div style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+}} color='primary'>
+        <div >
         
           <div>
           <FancyButtonRacing/>
           <FancyButtonSingleA/>
           <FancyButtonSingleB/>
           <FancyButtonSingleC/>
-      
+          <div style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+}}>
+<CarouselA />
+</div>
           </div>
        
           
-          <GridContainer>
-
-           
-          </GridContainer>
+          
         </div>
       </div>
     </div>

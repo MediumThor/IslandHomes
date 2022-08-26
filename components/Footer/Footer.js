@@ -76,20 +76,7 @@ export default function Footer(props) {
           
            
            
-            <ListItem className={classes.inlineBlock}>
-            <div style={{ margin: '00px' }}>
-      <img src=" " alt=" " style={{ width: '300px', }}/>
-    </div>
-              <a
-                href=""
-                className={classes.block}
-                target="_blank"
-              >
-            
-
-
-              </a>
-            </ListItem>
+    
           </List>
         </div>
         <div className={classes.right}>
