@@ -25,6 +25,8 @@ import styles from "styles/jss/nextjs-material-kit/components/footerStyle.js";
 import GridItem from "../Grid/GridItem";
 import Map from "public/img/Map.png"
 
+import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+
 const useStyles = makeStyles(styles);
 
 export default function Footer(props) {
@@ -78,13 +80,9 @@ export default function Footer(props) {
            
     
           </List>
+          
         </div>
-        <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} 
-           
-    
-        
-        </div>
+        <WorkSection/>
         
       </div>
      
@@ -104,6 +102,13 @@ export default function Footer(props) {
     </Button>
   </a>
 </Link>
+<div className={classes.right}>
+          &copy; {1900 + new Date().getYear()} 
+           
+    
+        
+        </div>
+
     </Badge>
 
     

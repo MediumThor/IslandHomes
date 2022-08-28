@@ -216,11 +216,18 @@ export default function LandingPage(props) {
         </GridContainer>
   
 
-          <TeamSection />
+<Card>
+<TeamSection />
           <TeamSection2 />
-          <TeamSectionCruising />
-          <WorkSection />
-          <SectionTypography />
+  
+</Card>
+<Card>
+<TeamSectionCruising />
+  
+</Card>
+         
+
+      
         </div>
       </div>
       <GridItem>

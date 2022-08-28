@@ -17,6 +17,7 @@ import Card from "components/Card/Card.js";
 import Button from "components/CustomButtons/Button.js";
 import { Parallax, Background } from "react-parallax";
 import Badge from "../components/Badge/Badge";
+import Carousel from "pages-sections/Components-Sections/SectionCarousel.js";
 
 import Box from '@mui/material/Box';
 
@@ -66,6 +67,7 @@ import { styled } from '@mui/material/styles';
 
 import logo from "public/img/logoBLACK.png";
 import BGGif from "public/img/gifOne.gif";
+import BgTest from "public/img/BGTest.gif"
 
 const useStyles = makeStyles(styles);
 //deleted sections:   <SectionBasics />
@@ -134,8 +136,12 @@ export default function Components(props) {
         blur={{ min: -15, max: 15 }}
         strength={300}
 
-                bgImage={BGGif}
+                bgImage={BgTest}
+                
+                
         renderLayer={percentage => (
+
+          
             <div 
                 style={{
                   
@@ -149,7 +155,7 @@ export default function Components(props) {
         )}
     >
 
-        <div style={{ height: '0px' }} />
+        <div style={{ height: '50px' }} />
 
         
         
@@ -247,9 +253,19 @@ export default function Components(props) {
         />
       </Background>
   
-    
-                 
-    <ButtonBar />
+
+
+<div style={{
+display: 'flex',
+alignItems: 'center',
+justifyContent: 'center',
+}}>
+<GridItem xs={12} sm={12} md={6}>
+        <Carousel/>
+       
+        </GridItem>
+</div>
+
     </Parallax>
 
     <Parallax
@@ -295,10 +311,9 @@ export default function Components(props) {
 
 </div>
       </div>
+
     </Parallax>
       
-
-
 
 
     <Parallax strength={-400}>
@@ -313,18 +328,24 @@ export default function Components(props) {
       </Background>
   
     
-     
-      <GridItem>
+<GridItem>
 
-    
-<Badge color="transparent">
+
+
+
+      <div style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+}}>
+   <GridItem md={6}>
 
 <WorkSection/>
 
-</Badge>
-
-
    </GridItem>
+</div>
+</GridItem>
+  
     </Parallax>
     
     

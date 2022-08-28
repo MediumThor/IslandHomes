@@ -25,7 +25,7 @@ export default function SectionCarousel() {
     autoplay: true,
   };
   return (
-    <div className={classes.section}>
+    <div >
       <div className={classes.container}>
         <GridContainer>
           <GridItem xs={12}  className={classes.marginAuto}>
@@ -33,7 +33,7 @@ export default function SectionCarousel() {
               <Carousel {...settings}>
                 <div>
                   <img
-                    src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/290880531_2220733691416843_1192104308329785208_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=P5hFJl7htrkAX8OwHi5&_nc_ht=scontent-ord5-1.xx&oh=00_AT9A5h1fzgFfk_f3cxi8ZyZ-Yv2BKVf6rSFaSxDhgJ1fDw&oe=62EC8284"
+                    src="https://i.imgur.com/FvYwDbj.jpg"
                     alt="First slide"
                     className="slick-image"
                   />
@@ -46,7 +46,7 @@ export default function SectionCarousel() {
                 </div>
                 <div>
                   <img
-                    src="https://scontent-ord5-1.xx.fbcdn.net/v/t1.6435-9/107059473_1637969136359971_2609599089493000917_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=zKfsd7czH6YAX87SK4F&_nc_ht=scontent-ord5-1.xx&oh=00_AT95iSOkqQd6xQf7V-qe78kTjw1A67XQ-7N2T_YfkAuhRQ&oe=630B7041"
+                    src="https://i.imgur.com/G0HDv0n.png"
                     alt="Second slide"
                     className="slick-image"
                   />
@@ -61,7 +61,7 @@ export default function SectionCarousel() {
 
                 <div>
                   <img
-                    src="https://scontent-ord5-1.xx.fbcdn.net/v/t1.6435-9/67950495_1342762882547266_2279083507533742080_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=KVP-LaKf7WUAX-l4rBd&_nc_ht=scontent-ord5-1.xx&oh=00_AT8GIk7JAocRi9MmZAOnNWprZgGVMvuaNtYac1DT9X6IRg&oe=630EA61C"
+                    src="https://i.imgur.com/aUvlF87.jpg"
                     alt="Third slide"
                     className="slick-image"
                   />
@@ -73,21 +73,7 @@ export default function SectionCarousel() {
                   </div>
                 </div>
 
-                <div>
-                  <img
-                    src="https://i.imgur.com/34xKXlL.png"
-                    alt="Third slide"
-                    className="slick-image"
-                  />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      North Slip, Port Washington, WI, United States
-                    </h4>
-                  </div>
-                </div>
-
-
+              
               </Carousel>
             </Card>
           </GridItem>

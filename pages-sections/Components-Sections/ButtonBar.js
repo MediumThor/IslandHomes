@@ -26,6 +26,7 @@ import CarouselA from "./SectionCarouselA";
 import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
 import Button from "components/CustomButtons/Button.js";
 import Link from "next/link";
+import Carousel from "pages-sections/Components-Sections/SectionCarousel.js";
 const useStyles = makeStyles(styles);
 
 export default function SectionTabs() {
@@ -44,13 +45,7 @@ export default function SectionTabs() {
           <FancyButtonSingleA/>
           <FancyButtonSingleB/>
           <FancyButtonSingleC/>
-          <div style={{
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-}}>
-<CarouselA />
-</div>
+          
           </div>
        
           
