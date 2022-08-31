@@ -120,8 +120,8 @@ export default function Components(props) {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 300,
-          color: "white",
+          height: 120,
+          color: "dark",
         }}
         {...rest}
       />
@@ -316,37 +316,7 @@ justifyContent: 'center',
       
 
 
-    <Parallax strength={-400}>
-      <Background className="custom-bg">
-        <div
-          style={{
-            height: 2000,
-            width: 2000,
-            backgroundImage: "url('https://getwallpapers.com/wallpaper/full/f/e/e/367521.jpg')"
-          }}
-        />
-      </Background>
-  
-    
-<GridItem>
-
-
-
-
-      <div style={{
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-}}>
-   <GridItem md={6}>
-
-<WorkSection/>
-
-   </GridItem>
-</div>
-</GridItem>
-  
-    </Parallax>
+   
     
     
   

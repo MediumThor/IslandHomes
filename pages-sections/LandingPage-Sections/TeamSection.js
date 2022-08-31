@@ -46,7 +46,7 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team. You
+                  You can write here details about one of your crew. You
                   can give more details about what they do. Feel free to add
                   some <a href="#pablo">links</a> for people to be able to
                   follow them outside the site.
@@ -93,7 +93,7 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
+                  You can write here details about one of your crew members. You
                   can give more details about what they do. Feel free to add
                   some <a href="#pablo">links</a> for people to be able to
                   follow them outside the site.
@@ -133,7 +133,7 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
+                  You can write here details about one of your crew members. You
                   can give more details about what they do. Feel free to add
                   some <a href="#pablo">links</a> for people to be able to
                   follow them outside the site.
