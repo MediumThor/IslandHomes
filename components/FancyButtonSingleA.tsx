@@ -7,9 +7,9 @@ import { Button } from '@mui/material';
 
 const images = [
   {
-    url: 'https://i.imgur.com/aUvlF87.jpg',
-    title: 'Events',
-    width: '100%',
+    url: 'https://i.etsystatic.com/29236928/r/il/570ead/3549625151/il_1588xN.3549625151_5eak.jpg',
+    title: 'Trim Packages',
+    width: '110%',
   },
 
 ];

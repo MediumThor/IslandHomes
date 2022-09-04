@@ -30,11 +30,11 @@ export default function SectionPills() {
       <div className={classes.container}>
         <div id="navigation-pills">
           <div className={classes.title}>
-            <h1 style={{color: 'white'}}>   Summer Sail Racing   </h1>
+            <h1 style={{color: 'white'}}>   Custom Packages   </h1>
           </div>
-          <div className={classes.title}>
+          <div className={classes.title}> 
             <h3>
-              <small></small>
+              <small> Build your dream.</small>
             </h3>
           </div>
           <GridContainer>

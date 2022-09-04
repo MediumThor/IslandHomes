@@ -7,8 +7,8 @@ import { Button } from '@mui/material';
 
 const images = [
   {
-    url: 'https://i.imgur.com/LJAaNAN.jpeg',
-    title: 'Sail Racing',
+    url: 'https://www.familyhandyman.com/wp-content/uploads/2017/08/Modern-Tiny-Living-The-Mohican.jpg?w=1000',
+    title: 'Floor Plans',
     width: '110%',
     
     

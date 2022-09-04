@@ -7,8 +7,8 @@ import { Button } from '@mui/material';
 
 const images = [
   {
-    url: 'https://nickyboycharters.com/wp-content/uploads/2015/11/Boat_001.jpg',
-    title: 'Trips and Charters',
+    url: 'https://i.etsystatic.com/9628491/r/il/699d26/3019489714/il_1588xN.3019489714_kxyk.jpg',
+    title: 'Custom Builds',
     width: '100%',
     
   },

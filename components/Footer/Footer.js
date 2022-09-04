@@ -58,19 +58,10 @@ export default function Footer(props) {
             
             >
               
-              <Button
-          href="https://www.google.com/maps/place/Port+Washington+Yacht+Club/@43.3918745,-87.8677297,17z/data=!3m1!4b1!4m5!3m4!1s0x8804ea1cbd453539:0x7d30452aaee626c4!8m2!3d43.3919444!4d-87.8655227"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <AddLocationIcon className={classes.icons} /> Visit
-        </Button>
+            
               <div>  
-                <p>PO BOX 101 430 N. Lake Street Port Washington WI 53074</p>
             </div>
             <div style={{ margin: '00px' }}>
-      <img src={Map} alt="react logo" style={{ width: '400px', }}/>
     </div>
             
 

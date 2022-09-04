@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
-import logo from "public/img/logoFlag.png";
+import logo from "public/img/islandLogo.png";
 
 const images = [
   {
@@ -18,7 +18,7 @@ const images = [
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
-  height: 40,
+  height: 60,
   [theme.breakpoints.down('md')]: {
     width: '100% !important', // Overrides inline-style
     height: 60,

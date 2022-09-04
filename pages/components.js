@@ -65,7 +65,7 @@ import TeamSection from "../pages-sections/LandingPage-Sections/TeamSection";
 import { styled } from '@mui/material/styles';
 
 
-import logo from "public/img/logoBLACK.png";
+import logo from "public/img/island.png";
 import BGGif from "public/img/gifOne.gif";
 import BgTest from "public/img/BGTest.gif"
 
@@ -136,8 +136,9 @@ export default function Components(props) {
         blur={{ min: -15, max: 15 }}
         strength={300}
 
-                bgImage={BgTest}
-                
+                bgImage={'https://i.etsystatic.com/29236928/r/il/570ead/3549625151/il_1588xN.3549625151_5eak.jpg'}
+           height='500px'    
+           width='400px'     
                 
         renderLayer={percentage => (
 
@@ -155,24 +156,23 @@ export default function Components(props) {
         )}
     >
 
-        <div style={{ height: '50px' }} />
+        <div style={{ height: '300px' }} />
 
         
         
 
         <div className={classes.container}>
-          <GridContainer>
+        <GridContainer>
             <GridItem >
            
               <div className={classes.brand}>
               
 
 
-                         <div style={{ margin: '160px'}}>
-      <img src={logo} style={{ marginTop:'0px', marginBottom:'50px',width: '250px', }}/>
+                         <div style={{ margin: '-60px'}}>
+      <img src={logo} style={{ marginTop:'0px', marginBottom:'150px',width: '500px', }}/>
 
       <h1 style={{color: 'white'}}>   <GridContainer>
-
 <GridItem >
 
   </GridItem>
@@ -215,13 +215,13 @@ export default function Components(props) {
 
   <Parallax
         blur={{ min: -10, max: 15 }}
-        bgImage="https://i.imgur.com/LJAaNAN.jpeg"
+        bgImage="https://i.etsystatic.com/29236928/r/il/f1dd29/3549625351/il_1588xN.3549625351_6ei9.jpg"
         bgImageAlt="Black sails"
         
         
         strength={-300}
     >
-        <div style={{ maxHeight: '10px' }} />
+        <div style={{ maxHeight: '1000px' }} />
 
         <div className={classes.container}>
           <GridContainer>
@@ -269,14 +269,14 @@ justifyContent: 'center',
     </Parallax>
 
     <Parallax
-      bgImage="https://i.imgur.com/aUvlF87.jpg"
+      bgImage="https://i.etsystatic.com/25678256/r/il/64e518/3835996859/il_1588xN.3835996859_g1c7.jpg"
       strength={400}
       renderLayer={(percentage) => (
         <div>
           <div
             style={{
               position: "absolute",
-              background: `rgba(255, 152, 0, ${percentage * .7})`,
+              background: `rgba(55, 252, 240, ${percentage * .7})`,
               left: "50%",
               top: "50%",
               borderRadius: "100%",
@@ -304,7 +304,7 @@ justifyContent: 'center',
           <Link href="/events">
   <a className={classes.link}>
   <Button color="info" round>
-      Event Calendar
+      Preorder Now
     </Button>
   </a>
 </Link>

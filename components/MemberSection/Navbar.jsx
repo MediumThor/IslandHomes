@@ -58,6 +58,7 @@ export default function Navbar() {
         </div>
         <div className="scrolling-buttons">
           <Wrapper>
+              <OnScreenScrolling/>
           </Wrapper>
         </div>
       </NavbarStyled>
