@@ -7,8 +7,8 @@ import { Button } from '@mui/material';
 
 const images = [
   {
-    url: 'https://i.imgur.com/yM5c93L.jpg',
-    title: 'Become A Member',
+    url: 'https://imgs.search.brave.com/jrE9QtpObnYsUTVU_CwVpnw-XGU_70uNvRqXXvCyP0Y/rs:fit:1200:942:1/g:ce/aHR0cHM6Ly9iZXN0/dGlueWNhYmlucy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMDEvdGlueS1o/b3VzZS1zb2xhci1w/YW5lbHMtY292ZXIu/anBn',
+    title: 'Sustainability',
     width: '100%',
     
   },
