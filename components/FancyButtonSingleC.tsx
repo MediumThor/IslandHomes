@@ -7,7 +7,7 @@ import { Button } from '@mui/material';
 
 const images = [
   {
-    url: 'https://imgs.search.brave.com/jrE9QtpObnYsUTVU_CwVpnw-XGU_70uNvRqXXvCyP0Y/rs:fit:1200:942:1/g:ce/aHR0cHM6Ly9iZXN0/dGlueWNhYmlucy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMDEvdGlueS1o/b3VzZS1zb2xhci1w/YW5lbHMtY292ZXIu/anBn',
+    url: 'https://i.etsystatic.com/25352460/r/il/7c67af/3265188324/il_1588xN.3265188324_murb.jpg',
     title: 'Sustainability',
     width: '100%',
     
